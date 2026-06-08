@@ -1,0 +1,30 @@
+---
+title: "Left-hand Thoughts (LHT) #0"
+description: "Initial post of the LHT (left-hand thoughts) blog."
+author:
+  - name: Peter T. Tanksley
+    url: https://petertanksley.github.io/
+    affiliation: ALERRT Center, Texas State University
+date: 07-07-2024
+categories: [Quarto, R, LHT] # self-defined categories
+citation: 
+  url: https://petertanksley.github.io/posts/2024-07-07_lht_blog_init/ 
+image: spiral1.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+### Remember spiral notebooks?
+
+I've used spiral notebooks throughout my whole school career but it took me an embarrassingly long period of time to realize something about them: only the right-hand side is worth a damn. In terms of legibility, that is. I'm a righty, so writing down notes on the left-hand side meant that my hand rested on the spiral itself for roughly half of each class period. I. HATED. IT.
+
+So, I ended up only writing notes on the right-hand side of my spirals. This worked, but then I had a whole blank page to deal with. What did I do with this unexpected windfall of college-ruled wonderland of possibilities? Doodled. Mostly. I also wrote down interesting thoughts, not always related to the lecture I was listening to—interesting to me at least. Thus, the left-hand side of the spiral took on a new life. It became where all of the interesting things went. Or perhaps just ideas that I wanted to evict from my brain (where they had been living rent-free). Either way, the "left-hand thoughts" turned out to be the most interesting parts of those spirals.
+
+![Spiral notebook from... doctorate? Notice the LHT, something about the ocean as a metaphor for the multiverse and fate. I have no idea where I was going with that...](spiral2.png){fig-align="center"}
+
+### Fast forward to today...
+
+Not being in school anymore, I don't use spirals hardly at all. My hope for this blog is that I'll be able to capture the spirit of these left-hand thoughts (LHTs) in a more fully explored format. These will probably focus more on coding and statistics (the very lame topics that occupy my mental left-hand side of my mental spiral nowadays). But there may be some other topics of interest in the future as well. We'll just need to see how things go...
+
+That's it for now! Cheers, everybody.
+
+P

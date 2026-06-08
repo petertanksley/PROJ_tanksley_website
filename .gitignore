@@ -1,0 +1,16 @@
+# Quarto build artifacts
+docs/
+_freeze/
+/.quarto/
+
+# R artifacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Temp files
+toPdfViaTempFile*
+*.pdf
+.DS_Store
+**/.DS_Store

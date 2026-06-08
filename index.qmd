@@ -1,0 +1,21 @@
+---
+title: "Welcome"
+---
+
+My name is Peter Tanksley, I'm a ~~biosocial criminologist studying social science genetics/epigenetics at UT Austin~~ research scientist at the ALERRT Center, Texas State University. This website is pretty boring right now but I plan to use it to host me-related information, materials, and (one day) a blog ("Left Hand Thoughts").
+
+Until I get things moving, I'd like to leave this image up as an illustration of how I (and many biosocial researchers like me) view their work. This image was taken from the cover of Douglas Hofstadter's "[Gödel, Escher, Bach: an Eternal Golden Braid](https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach)", a wonderful book about the origins of consciousness (at least, that was what I got from the 1/5 of the book that I managed to read in grad school before getting distracted by some world-ending assignment or other).
+
+![Cover image from "Gödel, Escher, Bach: an Eternal Golden Braid" by Douglas Hofstadter](geb_cover.png){fig-align="center"}
+
+But I have always found the image to be arresting and, if you imagine the letters to mean something other than the initials of the book's title, also an apt visual depiction of how the key forces of biosocial research are interrelated (and interdependent). Imagine the letters stand for "**G**enes", "**E**nvironment", and "**B**ehavior". Most research paradigms make use of only two of the three, and they typically prioritize one in particular. For example, genome-wide association studies (GWAS) typically study genes and behavior (using the term very loosely), while assuming that the environments of the participants are exchangeable (i.e., they have no impact on the outcome). Of course, the people running these studies don't really believe that to be the case, but it is a tacit assumption that many of those models make. In contrast, my perspective is that by leveraging multiple research paradigms and being as interdisciplinary as is practical, I can gain some kind of purchase on the colossal social issues that interest all social scientists (e.g., crime, poverty, health). As regards this image, think of a biosocial researcher as someone who is shifting the light source around this puzzling structure--suspended by mysterious means--and asking....
+
+-   What appears to be important if I look at it this way?
+
+-   What if I shift the light over here--what matters now?
+
+-   What if I use two lights at once?
+
+And so on, and so on, until a better understanding is gleaned.
+
+Ok, that's it for now! I hope to post more later on but for now, *Bon voyage*!

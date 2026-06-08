@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Peter T. Tanksley"
+  navbar:
+    right:  
+      # - text: Home
+      #   href: index.qmd
+      - text: Autobiographical BS
+        href: 1_about/about.qmd
+      - text: CV  
+        href: 2_cv/tanksley_cv.qmd  
+      - 3_posts/posts.qmd  
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
+freeze: auto
+
