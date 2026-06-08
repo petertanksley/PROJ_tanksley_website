@@ -9,6 +9,7 @@ target: Personal academic website with CV, about page, and blog
 effort_remaining: ~4h
 weekly_commitment: 1h
 last_updated: 2026-06-08
+repo: https://github.com/petertanksley/PROJ_tanksley_website
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
 phase: in-progress
