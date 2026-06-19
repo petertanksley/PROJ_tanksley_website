@@ -4,16 +4,8 @@ project:
 
 website:
   title: "Peter T. Tanksley"
-  navbar:
-    right:  
-      # - text: Home
-      #   href: index.qmd
-      - text: Autobiographical BS
-        href: 1_about/about.qmd
-      - text: CV  
-        href: 2_cv/tanksley_cv.qmd  
-      - 3_posts/posts.qmd  
-        
+  search: false
+  navbar: false
 format:
   html:
     theme: cosmo
