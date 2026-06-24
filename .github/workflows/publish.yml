@@ -19,6 +19,9 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install pagedjs-cli (PDF engine for CV)
+        run: npm install -g pagedjs-cli
+
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
