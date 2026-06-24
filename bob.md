@@ -8,7 +8,7 @@ deadline: null
 target: Personal academic website with CV, about page, and blog
 effort_remaining: ~4h
 weekly_commitment: 1h
-last_updated: 2026-06-08
+last_updated: 2026-06-19
 repo: https://github.com/petertanksley/PROJ_tanksley_website
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
@@ -25,19 +25,20 @@ sync: github
 
 ## This Week
 
-- Update CV: add NIDA R01 to Funding section (pending submission, July 2026)
-- Verify all 2025-2026 publications are listed and formatted correctly
-- Verify preprints section is current
-- Export updated PDF for SciENcv biosketch workflow
+- [x] PDF rendering overhaul — switched engine to pagedjs-cli; full print CSS pass (2026-06-19)
+- [x] Fixed critical HTML structure bug: orphaned `<div class="pub-list">` was closing `</main>` prematurely, making Presentations and all subsequent sections invisible in PDF
+- [x] Fixed curly-quote attribute bug on pub-item entry #1 — CSS selectors now match correctly
+- [x] Removed navbar from HTML/PDF output; fixed h2 border lines; unified year header styling
+- [x] Committed and pushed to GitHub (2026-06-19)
+- [ ] Export updated PDF for SciENcv biosketch workflow (post-R01)
+- [ ] Add NIDA R01 to Funding section once submitted
 
 ## Upcoming Milestones
 
-- CV current before June 16 (travel deadline — needed for SciENcv biosketch)
 - Website overhaul: TBD (parked until after R01)
 
 ## Deferred Work (post-R01)
 
-- **CV style overhaul:** Full visual redesign of the HTML CV. Current styling is functional but rough. Also need to fix PDF output pipeline — weasyprint requires system libraries (gobject/pango via Homebrew) and the current PDF rendering has layout issues. Consider switching PDF engine or fixing weasyprint dependencies.
 - **Website overhaul:** Broader redesign of the full site (index, about, posts). Structure is in place but styling and content need significant work. Treat as a separate project once R01 is submitted.
 
 ## Notes

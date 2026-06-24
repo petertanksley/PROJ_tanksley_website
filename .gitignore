@@ -1,7 +1,8 @@
 # Quarto build artifacts
 docs/
-_freeze/
 /.quarto/
+
+# freeze/ is intentionally tracked so CI can render without executing R
 
 # R artifacts
 .Rhistory
