@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "1_about/*.qmd"
+    - "2_cv/*.qmd"
+    - "3_posts/**/*.qmd"
+    - "!bob.md"
 
 website:
   title: "Peter T. Tanksley"

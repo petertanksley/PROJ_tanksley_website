@@ -13,7 +13,6 @@ repo: https://github.com/petertanksley/PROJ_tanksley_website
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
 phase: in-progress
-repo: null
 sync: github
 ---
 
