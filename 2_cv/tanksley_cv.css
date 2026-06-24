@@ -1,0 +1,209 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+
+/* all formats */
+
+h2 {
+  border-bottom: none;
+}
+
+.cvdate {
+  float: right;
+  font-style: italic
+}
+
+.print-only {
+  display: none;
+  /*color: aquamarine;*/
+}
+
+.inline_italic {
+  font-style: italic;
+}
+
+
+/* adapt stylesheet for print
+from: https://github.com/quarto-dev/quarto-cli/discussions/2538#discussioncomment-4081842 */
+
+/* for page-breaks use style spans
+  page-break-before: always;
+  page-break-after: always;
+*/
+
+@media print {
+  @page {
+      size: a4 portrait;
+      margin: 2cm 2cm 2cm 2.5cm;
+      counter-increment: page;
+      @bottom-center {
+        content: counter(page)
+      }
+  }
+  .no-print {
+      display: none;
+  }
+  .print-only {
+      display: block;
+  }
+
+  /* suppress website chrome in PDF */
+  .navbar, header {
+    display: none;
+  }
+
+  .cv-print-name p {
+    font-size: calc(1.325rem + .9vw);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.25em;
+  }
+
+  .contact-block {
+      margin-top: 0%;
+      text-align: center;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      padding: 0.5em 0;
+      margin-bottom: 1em;
+  }
+
+  html {
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  header {
+    margin-block-end: 2em;
+  }
+  header h1.title {
+      display: none;
+  }
+  header .author {
+    font-size: 2em;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    margin-block-end: 0em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    /* color: blueviolet; */
+  }
+
+  h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    /* color: green; */
+  }
+
+  body {
+    font-size: small;
+  }
+
+  p, div, ol li, ul li {
+    font-size: small;
+  }
+
+  ul li {
+    margin-bottom: 0.1em;
+  }
+
+  .two-col {
+    column-count: 2;
+    column-gap: 2em;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #36a7e9;
+  }
+
+  /* h2 must not be orphaned at bottom of page */
+  h2 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* year headers stay with first entry */
+  h4 {
+    font-weight: 700;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .pub-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-indent {
+    orphans: 3;
+    widows: 2;
+  }
+}
+
+
+.cv-header {
+  margin-bottom: 2em;
+  line-height: 1.6;
+}
+
+.cv-header p {
+  margin: 0.15em 0;
+}
+
+ol {
+  padding-left: 1.5em;   /* controls how far the whole list is indented */
+}
+
+ol li {
+  padding-left: 1.5em;  /* controls space between number and text */
+}
+
+ol li,
+ul li {
+  margin-bottom: 0.5em;
+}
+
+.cv-indent {
+  margin-left: 2.5em;
+}
+
+.cv-indent ul {
+  padding-left: 0;
+  list-style-position: inside;
+  margin-top: 0;
+  margin-block-start: 0;
+}
+
+.two-col > ul,
+.two-col > ol {
+  margin-top: 0;
+  margin-block-start: 0;
+}
+
+.pub-item {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+  margin-bottom: 0.5em;
+  font-size: small;
+}
+
+/* Pandoc wraps "26. text" in <ol start="26"><li> — use the list marker for the hanging number */
+.pub-item ol {
+  padding-left: 2.5em;
+  margin: 0;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+.pub-item li {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
