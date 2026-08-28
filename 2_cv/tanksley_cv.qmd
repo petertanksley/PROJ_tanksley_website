@@ -89,6 +89,8 @@ Minor: Biology
 
 #### 2026
 
+<div class="pub-item">27. Schwaba, Ted, Margaret L. Clapp Sullivan, Wonuola A. Akingbuwa, Kerli Ilves, **Peter T. Tanksley**, et al.<br>“Robust inference and widespread genetic correlates from a large-scale genetic association study of human personality.” [*Nature*](https://www.nature.com/){target="_blank"} (forthcoming).</div>
+
 <div class="pub-item">26. McAllister, Matthew J., **Peter T. Tanksley**, M. Hunter Martaindale, Ashlyn DeArman, Milena Samora, Steven E. Martin, & Drew E. Gonzalez.<br>“Inflammation on the Frontlines: Linking Salivary and Blood Biomarkers to Cardiometabolic Health and Physical Performance Parameters in Firefighters.” [*Journal of Occupational and Environmental Medicine*](https://doi.org/10.1097/JOM.0000000000003792){target="_blank"} (online first).</div>
 
 <div class="pub-item">25. Eleuterio-da-Rocha, Joe, **Peter T. Tanksley**, M. Hunter Martaindale, Jack Johncox, & J. Pete Blair.<br>“Striking or Grappling? Comparing Public and Officers’ Perceptions of Police Use of Force.” [*Journal of Criminal Justice*](https://doi.org/10.1016/j.jcrimjus.2026.102601){target="_blank"}, 103, 102601.</div>
@@ -166,11 +168,6 @@ Deniz Fraemke, Lena Paulus, Isabel K. Schuurmans, J.-H. Walter, Darina Czamara, 
 ::: {.cv-indent}
 Williams, Camille M., Holly E. Poore, Diego Londono-Correa, Yuchen Ning, Natasia S. Courchesne-Krak, Maia Choi, Justin D. Tubbs, Matthew Rosenblatt, **Peter T. Tanksley**, et al.\
 "Genomic insights into substance use and disinhibitory disorders." [*MedRxiv*](https://doi.org/10.64898/2026.02.09.26344198){target="_blank"}.
-:::
-
-::: {.cv-indent}
-Schwaba, Ted, Margaret L. Clapp Sullivan, Wonuola A. Akingbuwa, Kerli Ilves, **Peter T. Tanksley**, et al.\
-"Robust inference and widespread genetic correlates from a large-scale genetic association study of human personality." [*BioRxiv*](https://doi.org/10.1101/2025.05.16.648988){target="_blank"}.
 :::
 
 ## [Presentations]{.smallcaps}
@@ -366,6 +363,12 @@ Liu, Hexuan, **Peter T. Tanksley**, Ryan T. Motz, & J.C. Barnes.\
 :::
 
 ## [Funding]{.smallcaps}
+
+::: {.cv-indent}
+**Substance Use Involvement in Law Enforcement Officer Mortality: An Investigation of National Death Certificate Data**\
+[*National Institute on Drug Abuse, National Institutes of Health (R01)*]{.smallcaps} [2026]{style="float: right"}\
+Role: PI (Co-PI: Seth Watts) | Amount: \$505,783 (Under review)
+:::
 
 ::: {.cv-indent}
 **Extreme Risk Protection Orders and Firearm Suicide in New York: A Multi-State and Within-State Evaluation**\

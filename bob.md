@@ -8,10 +8,11 @@ deadline: null
 target: Personal academic website with CV, about page, and blog
 effort_remaining: ~4h
 weekly_commitment: 1h
-last_updated: 2026-06-19
+last_updated: 2026-08-27
 repo: https://github.com/petertanksley/PROJ_tanksley_website
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
+importance: medium
 phase: in-progress
 sync: github
 ---
@@ -29,12 +30,17 @@ sync: github
 - [x] Fixed curly-quote attribute bug on pub-item entry #1 — CSS selectors now match correctly
 - [x] Removed navbar from HTML/PDF output; fixed h2 border lines; unified year header styling
 - [x] Committed and pushed to GitHub (2026-06-19)
-- [ ] Export updated PDF for SciENcv biosketch workflow (post-R01)
-- [ ] Add NIDA R01 to Funding section once submitted
+- [x] GitHub Pages CI/CD set up (2026-06-24) — workflow at .github/workflows/publish.yml; renders via quarto-dev/quarto-actions/publish to gh-pages branch; pagedjs-cli installed in CI; repo Pages configured to serve from gh-pages; latest push pending workflow confirmation
+- [ ] Confirm GitHub Actions workflow passes (check Actions tab — latest push should be green)
+- [x] Added NIDA R01 to Funding as "Under review" (submitted 2026-07-17; $505,783 requested) (2026-08-27)
+- [x] Moved Schwaba et al. from Preprints to 2026 Academic Articles as #27, *Nature* (forthcoming) (2026-08-27)
+- [ ] After 2026-09-01 Nature publication: replace placeholder link with the article DOI, add volume/pages, drop "(forthcoming)"
+- [ ] Export updated PDF for SciENcv biosketch workflow
+- [ ] Redesign kicked off 2026-08-27 — plan-first with /frontend-design; see docs/logs/plans/
 
 ## Upcoming Milestones
 
-- Website overhaul: TBD (parked until after R01)
+- Website overhaul: ACTIVE as of 2026-08-27 (R01 submitted 2026-07-17)
 
 ## Deferred Work (post-R01)
 
