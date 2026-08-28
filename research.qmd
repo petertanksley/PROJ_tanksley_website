@@ -4,7 +4,7 @@ title: "Research"
 
 <div class="belt-bar--sm"></div>
 
-I work in the research wing of the [ALERRT Center](https://alerrt.org) at Texas State University, the group that trains law enforcement for active attacks and then studies, among other things, the people doing the responding. Our team's current projects are on the [ALERRT Research site](https://www.alerrt-research.org). Here is what I do there.
+I work in the Research Ring of the [ALERRT Center](https://alerrt.org) at Texas State University, the group that trains law enforcement for active attacks and then studies, among other things, the people doing the responding. Our team's current projects are on the [ALERRT Research site](https://www.alerrt-research.org). Here is what I do there.
 
 ## First responder health and mortality {#health}
 
@@ -12,7 +12,7 @@ This is the center of my work. First responders are exposed to shift work, chron
 
 <ul class="worklist">
 <li><span class="year">2025</span><span><a href="https://doi.org/10.1016/j.lana.2025.101270" class="work-title">Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020–2023</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
-<li><span class="year">2026</span><span><a href="https://doi.org/10.1097/JOM.0000000000003792" class="work-title">Inflammation on the frontlines: Linking salivary and blood biomarkers to cardiometabolic health and physical performance in firefighters</a><span class="venue">Journal of Occupational and Environmental Medicine</span></span></li>
+<li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.lana.2025.101330" class="work-title">Clarifying methods and interpretations in law enforcement mortality surveillance: Response to Kamal</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
 </ul>
 
 ## Police training and public opinion {#training}
