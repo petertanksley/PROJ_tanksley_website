@@ -8,7 +8,7 @@ title: "About"
 ![](../www/tanksley_peter_headshot.png){fig-alt="Peter T. Tanksley"}
 
 ::: {.about-text}
-I'm a research scientist at the [ALERRT Center](https://alerrt.org) at Texas State University, where I study the health, mortality, training, and public perception of first responders. My doctorate is in criminal justice (University of Cincinnati), and I did a postdoc in social genomics and epigenetics in the [Harden Lab](https://www.hardenlab.org) at UT Austin before coming home to Texas.
+I'm a research scientist at the [ALERRT Center](https://alerrt.org) at Texas State University, where I study the health, mortality, training, and public perception of first responders. My doctorate is in criminal justice (University of Cincinnati), and I did a postdoc in social genomics and epigenetics in the [Harden Lab](https://www.kpharden.com/) at UT Austin before coming home to Texas.
 
 Off the clock, I am:
 

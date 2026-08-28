@@ -24,9 +24,7 @@ The ALERRT Center trains law enforcement for the worst days of their careers, an
 <li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.jcrimjus.2025.102578" class="work-title">Public opinion and the immediate entry dilemma: A factorial survey experiment on active shooter response</a><span class="venue">Journal of Criminal Justice</span></span></li>
 </ul>
 
-## Where I came from {#origins .hex-section}
-
-<img class="hex-sticker" src="www/hex/origins-icon.svg" alt="">
+## Where I came from {#origins}
 
 My CV reads like two careers stapled together, and in a sense it is. I trained as a criminologist, then spent a postdoc in a behavior-genetics lab studying polygenic scores and DNA methylation: how the biology of children and adolescents registers social disadvantage, and how much of the "genetic effect" in observational studies is really something else. That work is why I still think about health in biological terms, and why the first-responder research keeps reaching for biomarkers rather than stopping at self-report.
 
