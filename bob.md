@@ -9,7 +9,7 @@ target: Personal academic website with CV, about page, and blog
 effort_remaining: ~2h (copy review + rename follow-through)
 weekly_commitment: 1h
 last_updated: 2026-08-27
-repo: https://github.com/petertanksley/petertanksley
+repo: https://github.com/petertanksley/petertanksley.github.io
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
 importance: medium
@@ -38,10 +38,10 @@ sync: github
 - [ ] Export updated PDF for SciENcv biosketch workflow
 - [x] Redesign built 2026-08-27: theme.scss (viridis palette, Cormorant/Public Sans/JetBrains Mono, belt-bar mark), navbar restored, new index/research/projects, about rewritten, blog listing demoted; plan at logs/plans/2026-08-27_website-redesign.md
 - [x] CI fixed: Ubuntu 24.04 AppArmor blocked Chromium sandbox for pagedjs-cli; sysctl step added to publish.yml (awaiting green run)
-- [ ] Peter: push main; confirm Actions green and live site updated
-- [ ] Peter: rename repo to petertanksley.github.io (GitHub settings) — then update remote, registry-local.md, README
+- [x] Pushed; Actions green; live at https://petertanksley.github.io (2026-08-28)
+- [x] Repo renamed to petertanksley.github.io (2026-08-28); remote/registry/README updated
 - [ ] Peter: review research.qmd copy (esp. "Where I came from") and index thesis paragraph
-- [ ] Optional: delete now-unused styles.css (needs approval)
+- [x] Deleted unused styles.css (approved 2026-08-28)
 
 ## Upcoming Milestones
 
