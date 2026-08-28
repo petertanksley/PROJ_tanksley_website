@@ -175,11 +175,6 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   a.more { font-family: $font-family-monospace; font-size: 0.8rem; }
 }
 
-// Section hex stickers: sit to the left of an h2, in the margin on wide screens
-.hex-section { position: relative; }
-.hex-section .hex-sticker { position: absolute; left: -104px; top: -10px; width: 84px; height: auto; }
-@media (max-width: 1100px) { .hex-section .hex-sticker { position: static; display: block; width: 64px; margin: 0 0 0.6rem; } }
-
 // GEB cover on the research page: floated beside the paragraph it illustrates
 .geb-figure {
   float: right;
