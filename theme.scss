@@ -150,15 +150,15 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   }
   .masthead-photo img {
     width: 200px;
-    height: 200px;
+    height: 231px;          // point-up hexagon: h = w / 0.866
     object-fit: cover;
-    border-radius: 6px;
     display: block;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   }
 }
 @media (max-width: 640px) {
   .masthead { grid-template-columns: 1fr; gap: 1.5rem; }
-  .masthead .masthead-photo img { width: 140px; height: 140px; }
+  .masthead .masthead-photo img { width: 140px; height: 162px; }
   .masthead .masthead-photo { order: -1; }
 }
 @keyframes masthead-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
@@ -174,6 +174,11 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   p { margin: 0 0 0.5rem; color: $ink-soft; font-size: 0.97rem; }
   a.more { font-family: $font-family-monospace; font-size: 0.8rem; }
 }
+
+// Section hex stickers: sit to the left of an h2, in the margin on wide screens
+.hex-section { position: relative; }
+.hex-section .hex-sticker { position: absolute; left: -104px; top: -10px; width: 84px; height: auto; }
+@media (max-width: 1100px) { .hex-section .hex-sticker { position: static; display: block; width: 64px; margin: 0 0 0.6rem; } }
 
 // GEB cover on the research page: floated beside the paragraph it illustrates
 .geb-figure {
@@ -246,8 +251,8 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
 // About: photo + text
 // ---------------------------------------------------------------------------
 .about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 2.5rem; align-items: start; margin-top: 1rem; }
-.about-grid img { width: 180px; border-radius: 6px; display: block; }
-@media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; } .about-grid img { width: 140px; } }
+.about-grid img { width: 180px; height: 208px; object-fit: cover; display: block; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
+@media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; } .about-grid img { width: 140px; height: 162px; } }
 
 // ---------------------------------------------------------------------------
 // CV (screen). Print rules stay in 2_cv/tanksley_cv.css.
