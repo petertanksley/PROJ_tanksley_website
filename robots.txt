@@ -1,1 +1,1 @@
-Sitemap: https://petertanksley.github.io/PROJ_tanksley_website/sitemap.xml
+Sitemap: https://petertanksley.github.io/sitemap.xml

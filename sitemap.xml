@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/index.html</loc>
-    <lastmod>2026-06-24T21:19:13.094Z</lastmod>
+    <loc>https://petertanksley.github.io/research.html</loc>
+    <lastmod>2026-08-28T04:02:50.579Z</lastmod>
   </url>
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/3_posts/2024-09-17_lht_birthday_day/index.html</loc>
-    <lastmod>2026-06-24T21:19:13.029Z</lastmod>
+    <loc>https://petertanksley.github.io/index.html</loc>
+    <lastmod>2026-08-28T04:02:50.578Z</lastmod>
   </url>
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/2_cv/tanksley_cv.html</loc>
-    <lastmod>2026-06-24T21:19:12.961Z</lastmod>
+    <loc>https://petertanksley.github.io/3_posts/2024-09-17_lht_birthday_day/index.html</loc>
+    <lastmod>2026-08-28T04:02:50.542Z</lastmod>
   </url>
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/1_about/about.html</loc>
-    <lastmod>2026-06-24T21:19:12.960Z</lastmod>
+    <loc>https://petertanksley.github.io/2_cv/tanksley_cv.html</loc>
+    <lastmod>2026-08-28T04:02:50.513Z</lastmod>
   </url>
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/3_posts/2024-07-07_lht_blog_init/index.html</loc>
-    <lastmod>2026-06-24T21:19:12.961Z</lastmod>
+    <loc>https://petertanksley.github.io/1_about/about.html</loc>
+    <lastmod>2026-08-28T04:02:50.512Z</lastmod>
   </url>
   <url>
-    <loc>https://petertanksley.github.io/PROJ_tanksley_website/3_posts/posts.html</loc>
-    <lastmod>2026-06-24T21:19:13.079Z</lastmod>
+    <loc>https://petertanksley.github.io/3_posts/2024-07-07_lht_blog_init/index.html</loc>
+    <lastmod>2026-08-28T04:02:50.513Z</lastmod>
+  </url>
+  <url>
+    <loc>https://petertanksley.github.io/3_posts/posts.html</loc>
+    <lastmod>2026-08-28T04:02:50.566Z</lastmod>
+  </url>
+  <url>
+    <loc>https://petertanksley.github.io/projects.html</loc>
+    <lastmod>2026-08-28T04:02:50.579Z</lastmod>
   </url>
 </urlset>
