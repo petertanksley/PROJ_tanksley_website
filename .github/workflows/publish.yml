@@ -22,6 +22,11 @@ jobs:
       - name: Install pagedjs-cli (PDF engine for CV)
         run: npm install -g pagedjs-cli
 
+      # Ubuntu 24.04 runners restrict unprivileged user namespaces (AppArmor), which
+      # kills Chromium's sandbox: "No usable sandbox!" -> "Failed to launch the browser".
+      - name: Allow Chromium sandbox on Ubuntu 24.04 runner
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+
       - name: Render and publish to gh-pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
