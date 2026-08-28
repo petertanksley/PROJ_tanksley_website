@@ -1,6 +1,6 @@
 # Peter T. Tanksley — personal website and CV
 
-Quarto website. Live at https://petertanksley.github.io (after repo rename; currently `/PROJ_tanksley_website/`).
+Quarto website. Live at https://petertanksley.github.io/petertanksley/ (repo `petertanksley/petertanksley`).
 
 ## Layout
 
