@@ -9,9 +9,18 @@ permissions:
   contents: write
   pages: write
 
+# A new push supersedes any run still in flight for this branch. Without this, a hung
+# run (2026-08-28: npm install sat for 2.5 h) keeps spinning next to the fresh one.
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    # Normal end-to-end time is ~6-7 min. Fail loudly instead of idling until GitHub's
+    # 6-hour default kills the job.
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,7 +28,10 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # Normally ~1 min. This step hung indefinitely on 2026-08-28 (npm registry /
+      # Chromium download), so it gets its own short leash.
       - name: Install pagedjs-cli (PDF engine for CV)
+        timeout-minutes: 5
         run: npm install -g pagedjs-cli
 
       # Ubuntu 24.04 runners restrict unprivileged user namespaces (AppArmor), which
