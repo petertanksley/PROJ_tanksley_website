@@ -175,6 +175,18 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   a.more { font-family: $font-family-monospace; font-size: 0.8rem; }
 }
 
+// GEB cover on the research page: floated beside the paragraph it illustrates
+.geb-figure {
+  float: right;
+  width: 240px;
+  margin: 0.3rem 0 1rem 2rem;
+  figure { margin: 0; }
+  img { width: 100%; border-radius: 4px; display: block; }
+  figcaption { font-size: 0.78rem; color: $ink-soft; line-height: 1.4; margin-top: 0.5rem; text-align: left; }
+}
+@media (max-width: 640px) { .geb-figure { float: none; width: 200px; margin: 1rem auto; } }
+.worklist { clear: both; }
+
 // ---------------------------------------------------------------------------
 // Compact publication list (index "selected work", research page examples)
 // ---------------------------------------------------------------------------

@@ -12,7 +12,7 @@ pagetitle: "Peter T. Tanksley"
 [Research Scientist, ALERRT Center · Texas State University]{.masthead-role}
 
 ::: {.masthead-thesis}
-I study the people who run toward emergencies. Most of my work asks how the job of a first responder shapes health and mortality, using national death-certificate data, biomarkers, and the occasional survey experiment. The rest asks how police are trained, how they decide under pressure, and what the public makes of those decisions.
+I study the people who run toward emergencies. Most of my work asks how the job of a first responder shapes health and mortality, mainly with national death-certificate data and biomarkers. The rest is about police: how they are trained to decide under pressure, and what the public makes of the decisions they end up making.
 :::
 
 ::: {.masthead-links}
@@ -30,14 +30,14 @@ I study the people who run toward emergencies. Most of my work asks how the job 
 ::: {.pillars}
 ::: {.pillar}
 ### First responder health and mortality
-How law enforcement officers, firefighters, and other first responders die, and what in the work gets them there. Population-wide surveillance data, cardiometabolic biomarkers, and the policy that follows.
+How law enforcement officers and firefighters die, and what in the work gets them there. Population-wide surveillance data, cardiometabolic biomarkers, and the policy that ought to follow from both.
 
 [Read more →](research.qmd#health){.more}
 :::
 
 ::: {.pillar}
 ### Police training and public opinion
-How officers are trained to make high-stakes decisions, how those decisions are perceived by the public and by officers themselves, and where the two diverge.
+How officers are trained to make high-stakes decisions, and how those decisions look to the public versus to the officers themselves. The two audiences disagree more often than either expects.
 
 [Read more →](research.qmd#training){.more}
 :::
