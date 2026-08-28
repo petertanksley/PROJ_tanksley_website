@@ -6,7 +6,7 @@ priority: medium
 path: /Users/PTT2/Documents/GitHub/PROJ_tanksley_website
 deadline: null
 target: Personal academic website with CV, about page, and blog
-effort_remaining: ~4h
+effort_remaining: ~2h (copy review + rename follow-through)
 weekly_commitment: 1h
 last_updated: 2026-08-27
 repo: https://github.com/petertanksley/PROJ_tanksley_website
@@ -36,11 +36,16 @@ sync: github
 - [x] Moved Schwaba et al. from Preprints to 2026 Academic Articles as #27, *Nature* (forthcoming) (2026-08-27)
 - [ ] After 2026-09-01 Nature publication: replace placeholder link with the article DOI, add volume/pages, drop "(forthcoming)"
 - [ ] Export updated PDF for SciENcv biosketch workflow
-- [ ] Redesign kicked off 2026-08-27 — plan-first with /frontend-design; see docs/logs/plans/
+- [x] Redesign built 2026-08-27: theme.scss (viridis palette, Cormorant/Public Sans/JetBrains Mono, belt-bar mark), navbar restored, new index/research/projects, about rewritten, blog listing demoted; plan at logs/plans/2026-08-27_website-redesign.md
+- [x] CI fixed: Ubuntu 24.04 AppArmor blocked Chromium sandbox for pagedjs-cli; sysctl step added to publish.yml (awaiting green run)
+- [ ] Peter: push main; confirm Actions green and live site updated
+- [ ] Peter: rename repo to petertanksley.github.io (GitHub settings) — then update remote, registry-local.md, README
+- [ ] Peter: review research.qmd copy (esp. "Where I came from") and index thesis paragraph
+- [ ] Optional: delete now-unused styles.css (needs approval)
 
 ## Upcoming Milestones
 
-- Website overhaul: ACTIVE as of 2026-08-27 (R01 submitted 2026-07-17)
+- Website overhaul: built 2026-08-27; ship pending push + repo rename
 
 ## Deferred Work (post-R01)
 

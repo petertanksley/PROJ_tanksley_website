@@ -1,0 +1,15 @@
+---
+title: "Projects"
+---
+
+<div class="belt-bar--sm"></div>
+
+Data-science side projects: dashboards, tooling, and the occasional over-engineered solution to a small problem. Everything here is built in R unless noted, and everything is open.
+
+::: {.project}
+<h3>Presumptive Laws Dashboard</h3><span class="tag tag--wip">under construction</span>
+
+A state-by-state legislative history of first responder presumptive workers' compensation laws — which conditions are presumed work-related, for whom, and since when — with the statute text traced to primary sources rather than advocacy summaries. Built to make a scattered legal landscape legible to researchers and practitioners in one view.
+
+<div class="stack">R · Quarto · Shiny <a href="https://github.com/ALERRT-Research/PROJ_presumptive_laws">{{< fa brands github >}} source</a></div>
+:::

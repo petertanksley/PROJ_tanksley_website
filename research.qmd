@@ -1,0 +1,36 @@
+---
+title: "Research"
+---
+
+<div class="belt-bar--sm"></div>
+
+A short map of what I work on. Project-level detail — the studies underway, the data, the team — lives at [alerrt-research.org](https://www.alerrt-research.org); this page is only the shape of the thing.
+
+## First responder health and mortality {#health}
+
+This is the center of my work. First responders are exposed to shift work, chronic stress, violence, and toxic environments, and the field has surprisingly little population-level evidence about what that exposure does over a career. I use national death-certificate data (the National Occupational Mortality Surveillance system), cardiometabolic and inflammatory biomarkers collected in the field, and policy data on presumptive workers' compensation laws to describe who dies of what, how that differs from comparable civilians, and which of those differences are actionable.
+
+<ul class="worklist">
+<li><span class="year">2025</span><span><a href="https://doi.org/10.1016/j.lana.2025.101270" class="work-title">Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020–2023</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
+<li><span class="year">2026</span><span><a href="https://doi.org/10.1097/JOM.0000000000003792" class="work-title">Inflammation on the frontlines: Linking salivary and blood biomarkers to cardiometabolic health and physical performance in firefighters</a><span class="venue">Journal of Occupational and Environmental Medicine</span></span></li>
+</ul>
+
+## Police training and public opinion {#training}
+
+The ALERRT Center trains law enforcement for the worst days of their careers, and that gives us a rare view into how officers are taught to decide under pressure. I study the training itself — what transfers, what does not, how to measure it — and the public's reading of the resulting decisions. Officers and civilians often watch the same encounter and see different things; factorial survey experiments let us locate exactly where the two audiences part ways.
+
+<ul class="worklist">
+<li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.jcrimjus.2026.102601" class="work-title">Striking or grappling? Comparing public and officers' perceptions of police use of force</a><span class="venue">Journal of Criminal Justice</span></span></li>
+<li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.jcrimjus.2025.102578" class="work-title">Public opinion and the immediate entry dilemma: A factorial survey experiment on active shooter response</a><span class="venue">Journal of Criminal Justice</span></span></li>
+</ul>
+
+## Where I came from {#origins}
+
+My CV reads like two careers stapled together, and in a sense it is. I trained as a criminologist, then spent a postdoc in a behavior-genetics lab studying polygenic scores and DNA methylation — how the biology of children and adolescents registers social disadvantage, and how much of the "genetic effect" in observational studies is really something else. That work is why I still think about health in biological terms, and why the first-responder research keeps reaching for biomarkers rather than stopping at self-report.
+
+The habit I took from it is best explained by the cover of Hofstadter's *Gödel, Escher, Bach*: a single carved block that casts a different letter in each direction, depending on where you put the light. Genes, environment, behavior. Most research paradigms light two of the three and assume the third away. I have spent my career shifting the lamp around and asking what matters *from here* — and then from here, and then with two lamps at once. The first-responder work is that same habit pointed at a population that badly needs the attention.
+
+<ul class="worklist">
+<li><span class="year">2024</span><span><a href="https://doi.org/10.1177/21677026241260260" class="work-title">Do polygenic indices capture 'direct' effects on child externalizing behavior? Within-family analyses in two longitudinal birth cohorts</a><span class="venue">Clinical Psychological Science</span></span></li>
+<li><span class="year">2023</span><span><a href="https://doi.org/10.1177/21677026231186802" class="work-title">Associations of DNA-methylation measures of biological aging with social disparities in child and adolescent mental health</a><span class="venue">Clinical Psychological Science</span></span></li>
+</ul>

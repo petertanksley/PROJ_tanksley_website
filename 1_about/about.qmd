@@ -1,32 +1,26 @@
 ---
-title: ""
-image: ../www/tanksley_peter_headshot.png
-about: 
-  template: trestles
-  image-shape: rounded
-  image-width: 20em
-  links:
-  - icon: twitter
-    text: Twitter
-    href: https://twitter.com/pttanksley
-  - icon: github
-    text: Github
-    href: https://github.com/petertanksley
+title: "About"
 ---
 
-# **A little about me**
+<div class="belt-bar--sm"></div>
 
-------------------------------------------------------------------------
+::: {.about-grid}
+![](../www/tanksley_peter_headshot.png){fig-alt="Peter T. Tanksley"}
 
-I am:
+::: {.about-text}
+I'm a research scientist at the [ALERRT Center](https://alerrt.org) at Texas State University, where I study the health, mortality, training, and public perception of first responders. My doctorate is in criminal justice (University of Cincinnati), and I did a postdoc in social genomics and epigenetics in the [Harden Lab](https://www.hardenlab.org) at UT Austin before coming home to Texas.
 
--   A husband and father of two little girls
--   A native Texan (6th generation or some such)
--   A BJJ blackbelt with passable skills (*ba dum tss*)
--   A bit of an academic nomad (mostly criminology, genomics, and population health)
--   An evangelical R user, and...
--   The worst player of *Cards Against Humanity* you are likely to meet (seriously, I'm really bad)
+Off the clock, I am:
 
-All of my academic-ee things you can read about on the page labeled "CV". But really, the blog posts about the random and undoubtedly overzealous application of R to everyday problems that are probably solved more easily using tools like... Excel (yuck)... is the content I've all been waiting for. So, "cry havoc! And let slip the dogs of war!" Or, just get going with the R stuff. Got it, got it, I'm going. More posts coming soon.
+- A husband and father of two little girls
+- A native Texan (sixth generation, or thereabouts)
+- A Brazilian jiu-jitsu black belt with passable skills — *ba dum tss*
+- An academic nomad: criminology, then genomics, then population health
+- An evangelical R user
+- The worst *Cards Against Humanity* player you are likely to meet
 
-K, bye!
+The blog, [Left-hand Thoughts](../3_posts/posts.qmd), is where the overzealous applications of R to everyday problems end up. Posts are rare. I'm working on it.
+
+[{{< fa envelope >}} peter_tanksley@txstate.edu](mailto:peter_tanksley@txstate.edu) · [{{< fa brands github >}} GitHub](https://github.com/petertanksley) · [{{< fa brands linkedin >}} LinkedIn](https://www.linkedin.com/in/peter-tanksley-107008121)
+:::
+:::

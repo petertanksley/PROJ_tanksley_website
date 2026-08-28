@@ -1,4 +1,6 @@
 /* import fonts */
+/* Fonts are loaded site-wide by theme.scss; the print stylesheet needs Public Sans directly
+   because pagedjs-cli renders the standalone HTML without the site theme. */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
 
 /* all formats */
@@ -90,8 +92,17 @@ from: https://github.com/quarto-dev/quarto-cli/discussions/2538#discussioncommen
   h2 {
     font-weight: 900;
     text-transform: uppercase;
-    /* color: blueviolet; */
   }
+  /* the site's mark, carried into print: black rule with a red segment */
+  h2::after {
+    content: "";
+    display: block;
+    width: 36pt;
+    height: 3pt;
+    margin-top: 3pt;
+    background: linear-gradient(to right, #1C1B22 0 78%, #B3261E 78% 100%);
+  }
+  .cv-download { display: none; }
 
   h3 {
     font-weight: 700;

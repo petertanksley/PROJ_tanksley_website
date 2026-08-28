@@ -1,8 +1,13 @@
 ---
-title: "Left-hand Thoughts (Blog)"
-listing: 
-  contents: ./ # all Quarto docs in the `posts` directory will be included on your listing page
-  type: grid # or `default` or `table`; each type has its own set of yaml options to include
-  sort: "date desc" # can also sort on more than one field
-  categories: true # allows you to sort posts by assigned categories 
+title: "Left-hand Thoughts"
+listing:
+  contents: ./
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [date, title, description, categories]
 ---
+
+<div class="belt-bar--sm"></div>
+
+Notes from the left-hand page of the notebook: the ideas that were interesting to me even when they weren't the point of the lecture. Mostly R, applied to things that did not require it.

@@ -4,12 +4,18 @@ format:
   html:
     linestretch: 1.25
     toc: true
+    toc-title: "Sections"
   pdf:
     author: Peter T. Tanksley
     pdf-engine: pagedjs-cli
 format-links: [pdf]
-css: tanksley_cv.css 
+css: tanksley_cv.css
+body-classes: cv-page
 ---
+
+::: {.no-print}
+<a class="cv-download" href="tanksley_cv.pdf" download>{{< fa file-arrow-down >}} Download PDF</a>
+:::
 
 ::: {.print-only .cv-print-name}
 Peter T. Tanksley

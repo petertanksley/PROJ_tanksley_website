@@ -1,0 +1,262 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------------------------
+// Tokens. Palette is drawn from viridis (R's default perceptual palette):
+// indigo (low end) and teal (midpoint). Belt red is reserved for the mark.
+// ---------------------------------------------------------------------------
+$paper:     #FBFAF7;
+$ink:       #1C1B22;
+$ink-soft:  #4B4956;
+$teal:      #21918C;   // decorative: belt bar accent, active nav
+$teal-text: #1F7F7A;   // link text; 4.6:1 on $paper
+$indigo:    #3B0F5C;
+$belt-red:  #B3261E;
+$rule:      #D9D6CE;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace:  "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$font-display:           "Cormorant Garamond", Georgia, "Times New Roman", serif;
+
+$body-bg:    $paper;
+$body-color: $ink;
+$link-color: $teal-text;
+$link-hover-color: $indigo;
+$link-decoration: none;
+
+$font-size-root: 17px;
+$line-height-base: 1.6;
+$headings-font-family: $font-display;
+$headings-font-weight: 600;
+$headings-color: $ink;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $teal-text;
+$navbar-padding-y: 1rem;
+$footer-bg: $paper;
+$footer-fg: $ink-soft;
+
+$grid-body-width: 760px;
+$grid-sidebar-width: 220px;
+$grid-margin-width: 220px;
+
+/*-- scss:rules --*/
+
+// ---------------------------------------------------------------------------
+// The mark: a black belt's rank bar. Short black rule, red segment at the end.
+// The site's single signature; used under the name and as CV section dividers.
+// ---------------------------------------------------------------------------
+@mixin belt-bar($w: 72px, $h: 6px) {
+  content: "";
+  display: block;
+  width: $w;
+  height: $h;
+  background: linear-gradient(to right, $ink 0 78%, $belt-red 78% 100%);
+  border-radius: 1px;
+}
+
+.belt-bar { @include belt-bar(); margin: 0.9rem 0 1.4rem; }
+p > .belt-bar:only-child { margin: 0; }
+.masthead p:has(> .belt-bar) { margin: 0.9rem 0 1.2rem; }
+.masthead-photo figure, .masthead-photo p { margin: 0; }
+.belt-bar--sm { @include belt-bar(48px, 4px); margin: 0.6rem 0 1rem; }
+
+// ---------------------------------------------------------------------------
+// Chrome
+// ---------------------------------------------------------------------------
+.navbar {
+  border-bottom: 1px solid $rule;
+  .navbar-brand {
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: 1.45rem;
+    letter-spacing: 0.01em;
+    color: $ink;
+  }
+  .nav-link {
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $ink-soft;
+    &:hover, &:focus-visible { color: $teal-text; }
+    &.active { color: $ink; box-shadow: inset 0 -2px 0 $teal; }
+  }
+  .quarto-navbar-tools .quarto-navigation-tool { color: $ink-soft; }
+}
+
+.nav-footer {
+  border-top: 1px solid $rule;
+  margin-top: 4rem;
+  padding: 1.5rem 0 2rem;
+  font-size: 0.85rem;
+  .nav-footer-center { font-family: $font-display; font-style: italic; font-size: 1.05rem; color: $ink-soft; }
+  a { color: $ink-soft; &:hover { color: $teal-text; } }
+}
+
+a {
+  transition: color 120ms ease;
+  &:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+}
+
+:focus-visible { outline: 2px solid $teal; outline-offset: 2px; }
+
+// Page titles set in the display face; body headings in a modest scale
+h1.title, .quarto-title h1 { font-size: 2.4rem; line-height: 1.1; margin-bottom: 0.25rem; }
+h2 { font-size: 1.55rem; margin-top: 2.6rem; margin-bottom: 0.8rem; border-bottom: none; padding-bottom: 0; }
+h3 { font-size: 1.2rem; margin-top: 1.8rem; }
+
+// Eyebrow: small caps utility label above a block
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $indigo;
+  margin-bottom: 0.4rem;
+}
+
+.muted { color: $ink-soft; }
+.mono { font-family: $font-family-monospace; font-size: 0.85em; }
+
+// ---------------------------------------------------------------------------
+// Masthead (index)
+// ---------------------------------------------------------------------------
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+  animation: masthead-in 500ms ease-out both;
+
+  .masthead-name {
+    display: block;
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.005em;
+    margin: 0;
+  }
+  .masthead-role { display: block; font-size: 1.05rem; color: $ink-soft; margin: 0 0 1.2rem; }
+  .masthead-thesis { font-size: 1.08rem; max-width: 34em; }
+  .masthead-links {
+    font-family: $font-family-monospace;
+    font-size: 0.82rem;
+    margin-top: 1.2rem;
+    a { margin-right: 1.1rem; white-space: nowrap; }
+  }
+  .masthead-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .masthead { grid-template-columns: 1fr; gap: 1.5rem; }
+  .masthead .masthead-photo img { width: 140px; height: 140px; }
+  .masthead .masthead-photo { order: -1; }
+}
+@keyframes masthead-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .masthead { animation: none; } }
+
+// ---------------------------------------------------------------------------
+// Pillars (index teaser + research page)
+// ---------------------------------------------------------------------------
+.pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem; }
+@media (max-width: 640px) { .pillars { grid-template-columns: 1fr; } }
+.pillar {
+  h3 { font-family: $font-display; font-size: 1.35rem; margin: 0 0 0.4rem; }
+  p { margin: 0 0 0.5rem; color: $ink-soft; font-size: 0.97rem; }
+  a.more { font-family: $font-family-monospace; font-size: 0.8rem; }
+}
+
+// ---------------------------------------------------------------------------
+// Compact publication list (index "selected work", research page examples)
+// ---------------------------------------------------------------------------
+.worklist { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.worklist li {
+  display: grid;
+  grid-template-columns: 4.2em 1fr;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid $rule;
+  &:last-child { border-bottom: 1px solid $rule; }
+  .year { font-family: $font-family-monospace; font-size: 0.82rem; color: $ink-soft; padding-top: 0.2em; }
+  .work-title { display: block; }
+  .venue { font-style: italic; color: $ink-soft; font-size: 0.93rem; }
+  .authors { display: block; color: $ink-soft; font-size: 0.88rem; margin-top: 0.15rem; }
+}
+
+// ---------------------------------------------------------------------------
+// Projects list
+// ---------------------------------------------------------------------------
+.project {
+  padding: 1.2rem 0;
+  border-top: 1px solid $rule;
+  &:last-of-type { border-bottom: 1px solid $rule; }
+  h3 { font-family: $font-display; font-size: 1.35rem; margin: 0 0 0.3rem; display: inline; }
+  .tag {
+    display: inline-block;
+    font-family: $font-family-monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.15em 0.5em;
+    border: 1px solid $rule;
+    border-radius: 3px;
+    color: $ink-soft;
+    margin-left: 0.6rem;
+    vertical-align: middle;
+  }
+  .tag--wip { color: $belt-red; border-color: rgba($belt-red, 0.4); }
+  p { margin: 0.4rem 0 0.5rem; }
+  .stack { font-family: $font-family-monospace; font-size: 0.78rem; color: $ink-soft; }
+  .stack a { margin-left: 0.8rem; }
+}
+
+// ---------------------------------------------------------------------------
+// Blog listing: quiet, list-style
+// ---------------------------------------------------------------------------
+.quarto-listing-default .quarto-post {
+  border-bottom: 1px solid $rule;
+  .listing-title { font-family: $font-display; font-size: 1.3rem; }
+  .listing-date { font-family: $font-family-monospace; font-size: 0.8rem; }
+  .listing-categories .listing-category { font-family: $font-family-monospace; font-size: 0.7rem; border-color: $rule; color: $ink-soft; }
+}
+.quarto-title-block .quarto-title-banner { background: transparent; color: $ink; border-bottom: 1px solid $rule; }
+
+// ---------------------------------------------------------------------------
+// About: photo + text
+// ---------------------------------------------------------------------------
+.about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 2.5rem; align-items: start; margin-top: 1rem; }
+.about-grid img { width: 180px; border-radius: 6px; display: block; }
+@media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; } .about-grid img { width: 140px; } }
+
+// ---------------------------------------------------------------------------
+// CV (screen). Print rules stay in 2_cv/tanksley_cv.css.
+// ---------------------------------------------------------------------------
+.cv-page {
+  h2 { font-family: $font-display; font-size: 1.5rem; margin-top: 2.6rem;
+       &::after { @include belt-bar(48px, 4px); margin-top: 0.45rem; } }
+  h3 { font-family: $font-family-sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: $indigo; margin-top: 1.6rem; }
+  h4 { font-family: $font-family-monospace; font-weight: 500; font-size: 0.85rem; color: $ink-soft; margin-top: 1.2rem; }
+  .smallcaps { font-variant: normal; }
+  .cv-download {
+    display: inline-block;
+    font-family: $font-family-monospace;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    padding: 0.5em 0.9em;
+    border: 1px solid $ink;
+    border-radius: 3px;
+    color: $ink;
+    margin: 0.5rem 0 1.5rem;
+    &:hover { background: $ink; color: $paper; text-decoration: none; }
+  }
+  .quarto-alternate-formats { display: none; } // replaced by .cv-download
+}

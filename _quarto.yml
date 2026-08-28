@@ -7,18 +7,48 @@ project:
     - "2_cv/*.qmd"
     - "3_posts/**/*.qmd"
     - "!bob.md"
+    - "!logs/"
 
 website:
   title: "Peter T. Tanksley"
+  site-url: https://petertanksley.github.io
+  description: "Research scientist at the ALERRT Center, Texas State University. First responder health and mortality; police training and public opinion."
+  favicon: www/favicon.svg
   search: false
-  navbar: false
+  navbar:
+    pinned: false
+    left:
+      - text: Research
+        href: research.qmd
+      - text: CV
+        href: 2_cv/tanksley_cv.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Left-hand Thoughts
+        href: 3_posts/posts.qmd
+      - text: About
+        href: 1_about/about.qmd
+    right:
+      - icon: github
+        href: https://github.com/petertanksley
+        aria-label: GitHub
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=YnIBrB8AAAAJ&hl=en
+        aria-label: Google Scholar
+  page-footer:
+    left: "© Peter T. Tanksley"
+    center: "The Road goes ever on and on."
+    right: "Built with [Quarto](https://quarto.org)"
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    theme: [cosmo, theme.scss]
+    toc: false
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <meta name="author" content="Peter T. Tanksley">
 
-editor: visual
+editor: source
 
 freeze: auto
-

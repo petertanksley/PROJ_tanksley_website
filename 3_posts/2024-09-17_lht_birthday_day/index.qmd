@@ -8,7 +8,7 @@ author:
 date: 09/17/24
 categories: [LHT, R, dataviz] # self-defined categories
 citation: 
-  url: https://petertanksley.github.io/posts/2024-09-17_lht_birthday_day/ 
+  url: https://petertanksley.github.io/3_posts/2024-09-17_lht_birthday_day/ 
 image: party_pineapple.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
