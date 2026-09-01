@@ -8,7 +8,7 @@ deadline: null
 target: Personal academic website with CV, about page, and blog
 effort_remaining: ~1h (Nature DOI swap; SciENcv PDF export). Hex stickers deferred.
 weekly_commitment: 1h
-last_updated: 2026-08-28
+last_updated: 2026-09-01
 repo: https://github.com/petertanksley/petertanksley.github.io
 blockers: null
 blocking_others: SciENcv biosketch (CV must be current first)
@@ -25,25 +25,37 @@ sync: github
 
 ## This Week
 
-- [ ] After 2026-09-01 Nature publication: replace placeholder link with the article DOI, add volume/pages, drop "(forthcoming)"
+- [ ] After 2026-09-02 11am EST Nature publication (DOI in hand, but EMBARGOED — no publicizing before then): replace placeholder link with the article DOI, add volume/pages, drop "(forthcoming)"
 - [ ] Export updated PDF for SciENcv biosketch workflow
 - [ ] Optional CI cleanup: skip puppeteer Chromium download, use runner Chrome — see logs/2026-08-28_ci-hang-and-housekeeping.md
+- [ ] **NEW 2026-09-01 — news/announcements feed** (recorded, not yet built or scoped):
+      (a) add an announcements/news feed section to the site; (b) first entry = the
+      published Substack article, "The Mortality Numbers Agency Heads Actually Need" —
+      https://tacticalscience.substack.com/p/the-mortality-numbers-agency-heads
 
-## Side project: hex stickers (deferred 2026-08-28)
+## Side project: hex stickers (DONE 2026-09-01, wired into site; uncommitted)
 
-Replicate Hadley Wickham's slide-illustration pipeline
-(https://tidydesign.substack.com/p/illustrating-my-slides-with-ai) with his R package
-`bananarama` (`pak::pak("hadley/bananarama")`): YAML with a shared `style` prompt + per-image
-`description`, `aspect-ratio: "1:1"`, `n: 3`, `seed`, `[refimage]` references. Gemini image
-model (~$0.07/image) via `ellmer::chat_google_gemini()`. Wrap the PNG in R with `magick`:
-clip to point-up hex, ink border, title. Model paints, code frames.
-**Blocker:** needs a `GEMINI_API_KEY` (personal Google AI Studio account + payment method;
-TXST Gemini is the Workspace app, not an API). Key goes in `~/.Renviron`, never the repo.
-**Missing locally:** `pak`, `ellmer`. Prototype history in logs/2026-08-28_ci-hang-and-housekeeping.md.
+Finals: `www/hex/{research,projects,left-hand-thoughts}.png` (480px web copies) + anchor
+`www/hearth.jpg`. Wired: `.hex-mark` float on Research/Projects/Left-hand Thoughts intros,
+`.hearth-figure` at bottom of About. Renders clean locally. Style guide + prompt lessons in
+logs/2026-09-01_sticker-generation.md. Total spend ~$2.03. Remaining: Peter approves look →
+commit; push publishes (site is public — no embargo content involved).
+
+### Pipeline notes (2026-08-31 build)
+
+Pipeline scaffolded in `4_stickers/` (Hadley's bananarama approach,
+https://tidydesign.substack.com/p/illustrating-my-slides-with-ai): `bananarama.yaml` (shared
+style + 3 starter section-mark prompts: research, projects, left-hand-thoughts), `refs/` for
+reference crops, `frame_hex.R` (magick point-up hex clip + border + title — tested, works).
+`pak`, `ellmer`, `bananarama` installed; `~/.R/Makevars` fixed (stale gcc-13 → gcc-16).
+Output dir `4_stickers/bananarama/` gitignored; framed finals go to `www/hex/`.
+**Remaining:** Peter adds `GEMINI_API_KEY` to `~/.Renviron` (has key, 2026-08-31), then
+`Rscript -e 'bananarama::bananarama("4_stickers/")'` (~$0.21/idea at n=3).
+Prototype history in logs/2026-08-28_ci-hang-and-housekeeping.md.
 
 ## Upcoming Milestones
 
-- 2026-09-01: Nature article publishes — update CV entry #27, then export PDF for SciENcv
+- 2026-09-02 11am EST: Nature article publishes (embargo lifts) — update CV entry #27, then export PDF for SciENcv
 
 ## Notes
 

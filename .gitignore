@@ -10,6 +10,11 @@ docs/
 .Rproj.user/
 *.Rproj
 
+# Generated sticker candidates (keep only framed finals in www/hex/)
+4_stickers/bananarama/
+# Personal reference photos (headshot, dogs) stay off the public repo
+4_stickers/refs/*.png
+
 # Temp files
 toPdfViaTempFile*
 *.pdf

@@ -24,3 +24,7 @@ The blog, [Left-hand Thoughts](../3_posts/posts.qmd), is where the overzealous a
 [{{< fa envelope >}} peter_tanksley@txstate.edu](mailto:peter_tanksley@txstate.edu) · [{{< fa brands github >}} GitHub](https://github.com/petertanksley) · [{{< fa brands linkedin >}} LinkedIn](https://www.linkedin.com/in/peter-tanksley-107008121)
 :::
 :::
+
+::: {.hearth-figure}
+![A typical evening: two dogs at a safe distance from the fire, and a skull that came with the apartment.](/www/hearth.jpg){fig-alt="16-bit pixel-art scene: a tall man reads on a loveseat in a cozy basement apartment, two dogs tucked against him, a fire burning, a laptop glowing on the coffee table, and a skull with glowing eyes reading a romance novel."}
+:::

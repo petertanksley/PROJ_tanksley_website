@@ -1,0 +1,103 @@
+# Hex sticker image generation — bananarama + Gemini
+# Run from repo root:  Rscript -e 'bananarama::bananarama("4_stickers/")'
+# Generated candidates land in 4_stickers/bananarama/ (gitignored).
+# Pick winners, then frame them as hexes with 4_stickers/frame_hex.R.
+#
+# Style guide (Peter, 2026-08-31): 16-bit pixel art, Dresden Files-inspired
+# subjects, sepia-leaning warm tones. The `hearth` entry is Peter's original
+# style-anchor prompt (wide scene, not a hex mark) — crop favorite details
+# from its output into refs/ and cite them as [refs/file] (no extension) to anchor
+# consistency in later generations.
+#
+# Note: the visible Gemini watermark only appears in the consumer app; the
+# API used here does not add one (invisible SynthID only).
+#
+# Requires GEMINI_API_KEY in ~/.Renviron. Cost is roughly $0.07/image,
+# so n: 3 per prompt = ~$0.21 per idea sampled.
+
+defaults:
+  style: >
+    16-bit pixel art illustration, SNES-era aesthetic, chunky visible
+    pixels, soft dithered shading, limited palette in slightly sepia,
+    warm tones throughout, cozy firelit mood. No text, no words, no
+    letters anywhere. Full-bleed composition filling the entire frame
+    edge to edge, main subject centered with generous margin around it.
+    Never draw a frame, border, badge, or outline shape around the scene.
+    Wherever a mystical sigil, talisman, rune circle, or geometric motif
+    appears, it is the OUTLINE of a regular hexagon — a six-SIDED
+    polygon, like a honeycomb cell. Never a hexagram, never a
+    six-pointed star, never a five-pointed star, never a pentagram,
+    never any star shape.
+  aspect-ratio: "1:1"
+  n: 3
+  seed: 5891
+
+output-dir: bananarama/
+
+images:
+  # Style anchor — personalized 2026-09-01: Peter as the wizard (see
+  # refs/peter.png), his dogs as the familiars, deliberate anachronisms
+  # (working laptop, BJJ belt, flip-flops) to mark it as homage, not
+  # the copyrighted ensemble. Wide scene, not a section mark; source of
+  # reference crops for everything after.
+  - name: hearth
+    aspect-ratio: "16:9"
+    description: >
+      A very tall man with the face of [refs/peter] — medium-brown hair
+      and a short brown beard with only a faint reddish tint from the
+      firelight, not red, not strawberry blonde — with a lean,
+      proportional athletic build, tall rather than bulky, no
+      exaggerated muscles. He wears dark jeans, a regular-fitting black
+      henley shirt with the sleeves pushed up, and brown leather work
+      boots. He reclines on a second-hand loveseat in his snug
+      underground basement apartment: rough exposed brick and uneven
+      stone walls, a low ceiling, and a bare concrete floor almost
+      entirely hidden beneath overlapping, mismatched, slightly worn
+      rugs. The room is cave-like and cluttered but cozy — candle stubs,
+      leaning stacks of books on the floor, lived-in and a little untidy,
+      warmed by the fire. One leg is draped over the arm of the loveseat
+      as he reads a paperback novel. Bookshelves in the background packed
+      with paperbacks and stacks of academic journal articles. Two dogs
+      sleep tucked up close against him and the loveseat, well away from
+      the fireplace: a yellow Labrador mix with the face and coloring of
+      [refs/josie] curled beneath his legs and leaning against the arm of
+      the couch, and a brindle mix with the face and coloring of
+      [refs/winnie] pressed against the base of the loveseat at his side.
+      A gnarled wooden wizard staff leans by the door next to a plain
+      pair of flip-flops, and a rolled-up black martial-arts belt — solid
+      black with a single red rank tab at one end, no stripes — rests on
+      the shelf beside the door. Above the fireplace mantel hangs a
+      framed print of the artwork in [refs/tattoo] — a radial
+      phylogenetic tree, a honeybee, and a DNA double helix — rendered in
+      the exact same chunky 16-bit pixel-art style, grain, and warm
+      palette as the rest of the scene, as if drawn by the same hand, not
+      pasted in. One large rug bears a subtle woven pattern of plain
+      hexagon outlines, like honeycomb.
+      On the coffee table, a modern slim gray laptop glows warmly, its
+      screen showing a simple stepped line chart; the laptop's brand
+      logo is three small interlocking hexagon outlines. A steaming
+      coffee mug sits beside it. At the foot of the loveseat sits a bare human skull —
+      only the skull, no other bones anywhere, no hands, no ribcage, no
+      spine, no skeleton — its eye sockets glowing softly orange, with a
+      romance novel propped open on the floor in front of it as if it is
+      reading. This scholar-wizard is in for the night.
+
+  # Section marks — single centered subject each, same world, same palette.
+  - name: research
+    description: >
+      A heavy oak desk in a wizard's candlelit subbasement laboratory.
+      Pinned above it, a glowing parchment chart showing a stepped,
+      descending survival curve. Potion bottles as paperweights, a quill
+      resting on open notes.
+
+  - name: projects
+    description: >
+      A cluttered wizard's workbench seen straight on: copper wire coils,
+      glass potion flasks, carving tools, and a half-finished hexagonal
+      talisman glowing faintly at the center of the bench.
+
+  - name: left-hand-thoughts
+    description: >
+      A human skull with softly glowing orange eye sockets resting on a
+      stack of dog-eared paperback novels, one book lying open in front
+      of it, a lit candle beside the stack.

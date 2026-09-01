@@ -10,4 +10,8 @@ listing:
 
 <div class="belt-bar--sm"></div>
 
+::: {.hex-mark}
+![](/www/hex/left-hand-thoughts.png){fig-alt="Pixel-art hex sticker: a human skull with glowing eyes perched on a stack of books, one lying open, a candle burning beside it."}
+:::
+
 Notes from the left-hand page of the notebook: the ideas that were interesting to me even when they weren't the point of the lecture. Mostly R, applied to things that did not require it.

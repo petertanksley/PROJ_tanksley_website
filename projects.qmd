@@ -4,6 +4,10 @@ title: "Projects"
 
 <div class="belt-bar--sm"></div>
 
+::: {.hex-mark}
+![](www/hex/projects.png){fig-alt="Pixel-art hex sticker: a workbench crowded with tools and potion flasks, a glowing hexagonal talisman at its center."}
+:::
+
 Side projects, mostly dashboards and tooling, occasionally an over-engineered solution to a small problem. Everything here is built in R unless noted, and everything is open.
 
 ::: {.project}
