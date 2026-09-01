@@ -95,7 +95,7 @@ Minor: Biology
 
 #### 2026
 
-<div class="pub-item">27. Schwaba, Ted, Margaret L. Clapp Sullivan, Wonuola A. Akingbuwa, Kerli Ilves, **Peter T. Tanksley**, et al.<br>“Robust inference and widespread genetic correlates from a large-scale genetic association study of human personality.” [*Nature*](https://www.nature.com/){target="_blank"} (forthcoming).</div>
+<div class="pub-item">27. Schwaba, Ted, Margaret L. Clapp Sullivan, Wonuola A. Akingbuwa, Kerli Ilves, **Peter T. Tanksley**, et al.<br>“Robust inference and widespread genetic correlates from a large-scale genetic association study of human personality.” [*Nature*](https://doi.org/10.1038/s41586-026-10992-9){target="_blank"} (online first).</div>
 
 <div class="pub-item">26. McAllister, Matthew J., **Peter T. Tanksley**, M. Hunter Martaindale, Ashlyn DeArman, Milena Samora, Steven E. Martin, & Drew E. Gonzalez.<br>“Inflammation on the Frontlines: Linking Salivary and Blood Biomarkers to Cardiometabolic Health and Physical Performance Parameters in Firefighters.” [*Journal of Occupational and Environmental Medicine*](https://doi.org/10.1097/JOM.0000000000003792){target="_blank"} (online first).</div>
 
