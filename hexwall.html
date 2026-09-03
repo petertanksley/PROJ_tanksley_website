@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Layout demo: tiling the section hex stickers into a honeycomb.">
 
-<title>Left-hand Thoughts – Peter T. Tanksley</title>
+<title>Hex wall – Peter T. Tanksley</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,22 +30,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../www/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4e84315e05b1a2d9df11685261c0aaeb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./www/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4e84315e05b1a2d9df11685261c0aaeb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -60,77 +59,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <meta name="author" content="Peter T. Tanksley">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Peter T. Tanksley</span>
     </a>
   </div>
@@ -140,23 +81,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../2_cv/tanksley_cv.html"> 
+    <a class="nav-link" href="./2_cv/tanksley_cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../3_posts/posts.html" aria-current="page"> 
+    <a class="nav-link" href="./3_posts/posts.html"> 
 <span class="menu-text">Left-hand Thoughts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../1_about/about.html"> 
+    <a class="nav-link" href="./1_about/about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -182,16 +123,20 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGF0YXZpeg==">dataviz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TEhU">LHT <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Left-hand Thoughts</h1>
+<h1 class="title">Hex wall</h1>
 </div>
 
+<div>
+  <div class="description">
+    Layout demo: tiling the section hex stickers into a honeycomb.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -206,74 +151,64 @@ window.Quarto = {
 </header>
 
 
-<div class="belt-bar--sm">
-
+<p>A layout test. The three existing stickers, repeated, tiled as a point-up honeycomb. Rows step down three quarters of a hex height and alternate rows shift half a hex width, so the stickers’ own inked borders meet with a hairline gap.</p>
+<div class="hexwall">
+<div class="hexrow">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
 </div>
-<div class="hex-mark">
-<p><img src="../www/hex/left-hand-thoughts.png" class="img-fluid" alt="Pixel-art hex sticker: a human skull with glowing eyes perched on a stack of books, one lying open, a candle burning beside it."></p>
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
 </div>
-<p>Notes from the left-hand page of the notebook: the ideas that were interesting to me even when they weren’t the point of the lecture. Mostly R, applied to things that did not require it.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TEhUJTJDUiUyQ2RhdGF2aXo=" data-listing-date-sort="1726531200000" data-listing-file-modified-sort="1788406054033" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2434">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../3_posts/2024-09-17_lht_birthday_day/index.html" class="no-external">LHT #1 - Birthday Days</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TEhU'); return false;">LHT</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpeg=='); return false;">dataviz</div>
-
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
 </div>
-<div class="delink listing-description"><a href="../3_posts/2024-09-17_lht_birthday_day/index.html" class="no-external">
-<p>What day is your next birthday day?</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../3_posts/2024-09-17_lht_birthday_day/index.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2024
-</div>
-</a>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UXVhcnRvJTJDUiUyQ0xIVA==" data-listing-date-sort="1720310400000" data-listing-file-modified-sort="1788406054004" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="303">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../3_posts/2024-07-07_lht_blog_init/index.html" class="no-external">Left-hand Thoughts (LHT) #0</a>
-</h3>
-<div class="listing-categories">
+<p>Below, the same wall at a smaller cell size, the way a background band or a footer strip might use it.</p>
+<div class="hexwall hexwall-sm">
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+</div>
+</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('TEhU'); return false;">LHT</div>
-
-</div>
-<div class="delink listing-description"><a href="../3_posts/2024-07-07_lht_blog_init/index.html" class="no-external">
-<p>Initial post of the LHT (left-hand thoughts) blog.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../3_posts/2024-07-07_lht_blog_init/index.html" class="no-external">
-<div class="listing-date">
-Jul 7, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

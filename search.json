@@ -35,6 +35,13 @@
     "text": "Peter T. Tanksley\n\nResearch Scientist, ALERRT Center · Texas State University\n\nI study the people who run toward emergencies. Most of my work asks how the job of a first responder shapes health and mortality, mainly with national death-certificate data and biomarkers. The rest is about police: how they are trained to decide under pressure, and what the public makes of the decisions they end up making.\n\n\n Email  Scholar  ORCID  GitHub  CV\n\n\n\n\n\n\n\nWhat I work on\n\n\n\nFirst responder health and mortality\nHow law enforcement officers and firefighters die, and what in the work gets them there. Population-wide surveillance data, cardiometabolic biomarkers, and the policy that ought to follow from both.\nRead more →\n\n\nPolice training and public opinion\nHow officers are trained to make high-stakes decisions, and how those decisions look to the public versus to the officers themselves. The two audiences disagree more often than either expects.\nRead more →\n\n\n\nSelected work\n\n\n\n2026Correctional officer mortality in the United States, 2020–2023: Evidence from the National Occupational Mortality Surveillance programAmerican Journal of Public Health (in press)Tanksley, Logan, & Barnes\n\n\n2026Robust inference and correlates from genetic associations with personalityNatureSchwaba, Clapp Sullivan, Akingbuwa, Ilves, Tanksley, et al.\n\n\n2026Public opinion and the immediate entry dilemma: A factorial survey experiment on active shooter responseJournal of Criminal JusticeMartaindale & Tanksley\n\n\n2026Striking or grappling? Comparing public and officers’ perceptions of police use of forceJournal of Criminal JusticeEleuterio-da-Rocha, Tanksley, Martaindale, Johncox, & Blair\n\n\n2025Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020–2023The Lancet Regional Health – AmericasTanksley, Barnes, Blair, & Martaindale\n\n\n\nFull CV →"
   },
   {
+    "objectID": "hexband.html",
+    "href": "hexband.html",
+    "title": "Hex band",
+    "section": "",
+    "text": "A layout test. The stickers sit on a fixed band down the right-hand side of the viewport. They stay on a honeycomb lattice so neighbours nest, but which cells are filled is left to a seeded random process that clumps: fill probability falls off with distance from the edge and rises when the cells above are occupied. The band is exactly as wide as the page gutter, so clumps clip at the text edge; it hides below 960px.\nThe generator is 4_stickers/hexband.R, which writes _hexband.qmd; this page and the CV both include that file. Change the seed for a different arrangement.\nFiller paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves.\nMore filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs."
+  },
+  {
     "objectID": "3_posts/2024-09-17_lht_birthday_day/index.html",
     "href": "3_posts/2024-09-17_lht_birthday_day/index.html",
     "title": "LHT #1 - Birthday Days",
@@ -180,6 +187,13 @@
     "title": "Left-hand Thoughts",
     "section": "",
     "text": "Notes from the left-hand page of the notebook: the ideas that were interesting to me even when they weren’t the point of the lecture. Mostly R, applied to things that did not require it.\n\n\n\n\n\n\n\n\n\nLHT #1 - Birthday Days\n\n\n\nLHT\n\nR\n\ndataviz\n\n\n\nWhat day is your next birthday day?\n\n\n\n\n\nSep 17, 2024\n\n\n\n\n\n\n\nLeft-hand Thoughts (LHT) #0\n\n\n\nQuarto\n\nR\n\nLHT\n\n\n\nInitial post of the LHT (left-hand thoughts) blog.\n\n\n\n\n\nJul 7, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "hexwall.html",
+    "href": "hexwall.html",
+    "title": "Hex wall",
+    "section": "",
+    "text": "A layout test. The three existing stickers, repeated, tiled as a point-up honeycomb. Rows step down three quarters of a hex height and alternate rows shift half a hex width, so the stickers’ own inked borders meet with a hairline gap.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBelow, the same wall at a smaller cell size, the way a background band or a footer strip might use it."
   },
   {
     "objectID": "projects.html",

@@ -2,34 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://petertanksley.github.io/research.html</loc>
-    <lastmod>2026-09-03T02:40:56.797Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.067Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/index.html</loc>
-    <lastmod>2026-09-03T02:40:56.796Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://petertanksley.github.io/hexband.html</loc>
+    <lastmod>2026-09-03T03:27:34.067Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/3_posts/2024-09-17_lht_birthday_day/index.html</loc>
-    <lastmod>2026-09-03T02:40:56.759Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.033Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/2_cv/tanksley_cv.html</loc>
-    <lastmod>2026-09-03T02:40:56.729Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.004Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/1_about/about.html</loc>
-    <lastmod>2026-09-03T02:40:56.729Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.003Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/3_posts/2024-07-07_lht_blog_init/index.html</loc>
-    <lastmod>2026-09-03T02:40:56.729Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.004Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/3_posts/posts.html</loc>
-    <lastmod>2026-09-03T02:40:56.783Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://petertanksley.github.io/hexwall.html</loc>
+    <lastmod>2026-09-03T03:27:34.067Z</lastmod>
   </url>
   <url>
     <loc>https://petertanksley.github.io/projects.html</loc>
-    <lastmod>2026-09-03T02:40:56.797Z</lastmod>
+    <lastmod>2026-09-03T03:27:34.067Z</lastmod>
   </url>
 </urlset>
