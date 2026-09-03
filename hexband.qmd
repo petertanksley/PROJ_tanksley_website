@@ -1,0 +1,14 @@
+---
+title: "Hex band"
+description: "Layout demo: an irregular honeycomb band down the right edge of the screen."
+---
+
+A layout test. The stickers sit on a fixed band down the right-hand side of the viewport. They stay on a honeycomb lattice so neighbours nest, but which cells are filled is left to a seeded random process that clumps: fill probability falls off with distance from the edge and rises when the cells above are occupied. The band is exactly as wide as the page gutter, so clumps clip at the text edge; it hides below 960px.
+
+The generator is `4_stickers/hexband.R`, which writes `_hexband.qmd`; this page and the CV both include that file. Change the seed for a different arrangement.
+
+Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. Filler paragraph so the page scrolls. The band is fixed, so it stays put while this text moves. 
+
+More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. More filler. Different seeds give different clumping; the probabilities in the script are the knobs. 
+
+{{< include _hexband.qmd >}}

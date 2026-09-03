@@ -1,0 +1,66 @@
+---
+title: "Hex wall"
+description: "Layout demo: tiling the section hex stickers into a honeycomb."
+---
+
+A layout test. The three existing stickers, repeated, tiled as a point-up honeycomb. Rows step down three quarters of a hex height and alternate rows shift half a hex width, so the stickers' own inked borders meet with a hairline gap.
+
+```{=html}
+<div class="hexwall">
+<div class="hexrow">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+</div>
+```
+
+Below, the same wall at a smaller cell size, the way a background band or a footer strip might use it.
+
+```{=html}
+<div class="hexwall hexwall-sm">
+<div class="hexrow">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+</div>
+<div class="hexrow">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+<img src="www/hex/research.png" alt="Research hex sticker">
+<img src="www/hex/projects.png" alt="Projects hex sticker">
+<img src="www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker">
+</div>
+</div>
+```

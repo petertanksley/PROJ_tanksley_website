@@ -189,6 +189,53 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   .hex-mark { float: none; width: 120px; margin: 0.5rem auto 1.25rem; }
 }
 
+// Hex wall (hexwall.qmd demo): honeycomb of the www/hex/*.png stickers.
+// Point-up hexes: rows step down 3/4 of a hex height, alternate rows shift
+// half a hex width. --gap keeps the stickers' own inked borders from doubling.
+.hexwall {
+  --w: 160px;
+  --h: calc(var(--w) / 0.866);
+  --gap: 3px;
+  margin: 2rem 0;
+  .hexrow { display: flex; gap: var(--gap); }
+  .hexrow + .hexrow { margin-top: calc(var(--h) * -0.25 + var(--gap)); }
+  .hexrow:nth-child(even) { margin-left: calc(var(--w) / 2 + var(--gap) / 2); }
+  img { width: var(--w); height: var(--h); display: block; flex: none; }
+}
+.hexwall-sm { --w: 96px; }
+@media (max-width: 640px) {
+  .hexwall { --w: 72px; }
+  .hexwall-sm { --w: 44px; }
+}
+
+// Hex band (hexband.qmd demo): irregular honeycomb fixed to the right edge.
+// Each img carries lattice coords --c (columns in from the right edge, may be
+// fractional/negative on shifted rows) and --r (row). Sits behind page content.
+.hexband {
+  --w: 92px;
+  --h: calc(var(--w) / 0.866);
+  --gap: 3px;
+  position: fixed; top: 0; right: 0; bottom: 0;
+  // exactly the page gutter (Quarto body is 760px centred): clumps that reach
+  // the text column are clipped at its edge rather than sliding beneath it
+  // ~2.6 cells wide, never wider than the gutter: the two edge columns show
+  // in full, the third appears only as clipped slivers under the fade
+  width: max(0px, min(calc(var(--w) * 2.6), calc((100vw - 800px) / 2)));
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  // soften the clip where the gutter meets the text column
+  mask-image: linear-gradient(to right, transparent, #000 calc(var(--w) * 0.35));
+  img {
+    position: absolute;
+    width: var(--w); height: var(--h);
+    right: calc(var(--c) * (var(--w) + var(--gap)));
+    top:   calc(var(--r) * (var(--h) * 0.75 + var(--gap) * 0.87) - var(--h) * 0.4);
+  }
+}
+@media (max-width: 960px) { .hexband { display: none; } }
+@media print { .hexband { display: none; } }
+
 // Hearth scene on the about page: full-width figure below the grid
 .hearth-figure {
   clear: both;

@@ -5,6 +5,7 @@ format:
     linestretch: 1.25
     toc: true
     toc-title: "Sections"
+    toc-location: left
   pdf:
     author: Peter T. Tanksley
     pdf-engine: pagedjs-cli
@@ -516,3 +517,5 @@ American Journal of Criminal Justice (member)
 - Seminar in Criminal Justice *(online)*
 :::
 :::
+
+{{< include ../_hexband.qmd >}}
