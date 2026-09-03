@@ -17,6 +17,7 @@ This is the center of my work. First responders are exposed to shift work, chron
 <ul class="worklist">
 <li><span class="year">2025</span><span><a href="https://doi.org/10.1016/j.lana.2025.101270" class="work-title">Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020–2023</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
 <li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.lana.2025.101330" class="work-title">Clarifying methods and interpretations in law enforcement mortality surveillance: Response to Kamal</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
+<li><span class="year">2026</span><span><span class="work-title">Correctional officer mortality in the United States, 2020–2023: Evidence from the National Occupational Mortality Surveillance program</span><span class="venue">American Journal of Public Health (in press)</span></span></li>
 </ul>
 
 ## Police training and public opinion {#training}
