@@ -326,7 +326,9 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   h2 { font-family: $font-display; font-size: 1.5rem; margin-top: 2.6rem;
        &::after { @include belt-bar(48px, 4px); margin-top: 0.45rem; } }
   h3 { font-family: $font-family-sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: $indigo; margin-top: 1.6rem; }
-  h4 { font-family: $font-family-monospace; font-weight: 500; font-size: 0.85rem; color: $ink-soft; margin-top: 1.2rem; }
+  // year markers (publications, presentations): match the bold entry titles
+  // used in Experience/Education rather than reading as mono metadata
+  h4 { font-family: $font-family-sans-serif; font-weight: 700; font-size: 1rem; color: inherit; margin-top: 1.5rem; margin-bottom: 0.6rem; }
   .smallcaps { font-variant: normal; }
   .cv-download {
     display: inline-block;
