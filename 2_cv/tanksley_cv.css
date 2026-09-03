@@ -202,7 +202,6 @@ ul li {
   padding-left: 0;
   text-indent: 0;
   margin-bottom: 0.5em;
-  font-size: small;
 }
 
 /* Pandoc wraps "26. text" in <ol start="26"><li> — use the list marker for the hanging number */

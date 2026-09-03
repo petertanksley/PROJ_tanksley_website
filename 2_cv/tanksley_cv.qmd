@@ -103,7 +103,7 @@ Minor: Biology
 
 <div class="pub-item">25. Eleuterio-da-Rocha, Joe, **Peter T. Tanksley**, M. Hunter Martaindale, Jack Johncox, & J. Pete Blair.<br>“Striking or Grappling? Comparing Public and Officers’ Perceptions of Police Use of Force.” [*Journal of Criminal Justice*](https://doi.org/10.1016/j.jcrimjus.2026.102601){target="_blank"}, 103, 102601.</div>
 
-<div class="pub-item">24. Wooldredge, John, Joshua C. Cochran, & **Peter T. Tanksley**.<br>“Upstream and downstream disparities in prison rule violation processes.” [*Journal of Research in Crime & Delinquency*](https://doi.org/10.1177/00224278251411905){target="_blank"} (online first).</div>
+<div class="pub-item">24. Wooldredge, John, Joshua C. Cochran, & **Peter T. Tanksley**.<br>“Upstream and downstream racial disparities in prison rule violation processes.” [*Journal of Research in Crime & Delinquency*](https://doi.org/10.1177/00224278251411905){target="_blank"}, 63(2), 242–276.</div>
 
 <div class="pub-item">23. **Tanksley, Peter T.**, J.C. Barnes, J. Pete Blair, & M. Hunter Martaindale.<br>“Clarifying methods and interpretations in law enforcement mortality surveillance: Response to Kamal.” [*The Lancet Regional Health - Americas*](https://doi.org/10.1016/j.lana.2025.101330){target="_blank"}, 53.</div>
 
@@ -113,7 +113,7 @@ Minor: Biology
 
 <div class="pub-item">21. **Tanksley, Peter T.**, J.C. Barnes, J. Pete Blair, & M. Hunter Martaindale.<br>“Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020-2023.” [*The Lancet Regional Health - Americas*](https://doi.org/10.1016/j.lana.2025.101270){target="_blank"}, 52, 101270.</div>
 
-<div class="pub-item">20. Blair, Pete J., **Peter T. Tanksley**, Emily D. Spivey, & M. Hunter Martaindale.<br>“To what are we inferring? The widespread misuse of inferential testing in the most cited criminology and criminal justice journals.” [*American Journal of Criminal Justice*](https://doi.org/10.1007/s12103-025-09845-4){target="_blank"} (online first).</div>
+<div class="pub-item">20. Blair, Pete J., **Peter T. Tanksley**, Emily D. Spivey, & M. Hunter Martaindale.<br>“To what are we inferring? The widespread misuse of inferential testing in the most cited criminology and criminal justice journals.” [*American Journal of Criminal Justice*](https://doi.org/10.1007/s12103-025-09845-4){target="_blank"}, 51, 405–426.</div>
 
 <div class="pub-item">19. Blair, Pete J., M. Hunter Martaindale, **Peter T. Tanksley**, & Jack D. Johncox.<br>“Active attacks with motor vehicles: A short report and case study of the 2025 New Year’s Day attack in New Orleans, LA.” [*American Journal of Criminal Justice*](https://doi.org/10.1007/s12103-025-09806-x){target="_blank"}, 50, 1067–1074.</div>
 
