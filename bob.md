@@ -6,7 +6,7 @@ priority: medium
 path: /Users/PTT2/Documents/GitHub/PROJ_tanksley_website
 deadline: null
 target: Personal academic website with CV, about page, and blog
-effort_remaining: ~0 (monitoring; volume/pages when Nature assigns them)
+effort_remaining: ~0 (monitoring; DOI/volume for AJPH and Nature papers when assigned)
 weekly_commitment: 1h
 last_updated: 2026-09-02
 repo: https://github.com/petertanksley/petertanksley.github.io
@@ -41,6 +41,8 @@ sync: github
 
 - TBD: add volume/issue/pages to CV entry 27 (Schwaba et al., Nature, doi:10.1038/s41586-026-10992-9)
   when assigned — check `api.crossref.org/works/<doi>`; none as of 2026-09-02
+- TBD: add DOI (and later volume/pages) to CV entry 28 (Tanksley, Logan, & Barnes, AJPH, in press)
+  on the CV, homepage, and research page; also link the titles once a DOI exists
 
 ## Notes
 
@@ -51,4 +53,9 @@ sync: github
 - CV source: `2_cv/tanksley_cv.qmd`; CSS: `2_cv/tanksley_cv.css`
 - Hex stickers: finals in `www/hex/` + anchor `www/hearth.jpg`; pipeline in `4_stickers/`;
   style guide and prompt lessons in `logs/2026-09-01_sticker-generation.md`
+- CV hex band: `4_stickers/hexband.R` → `_hexband.qmd` (included by the CV). New stickers:
+  append to `stickers` in the script and rerun. Design notes in
+  `logs/2026-09-02_hex-band-and-cv-fixes.md`
+- CV publication entries must be fenced divs (`::: {.pub-item}`), never raw `<div>` — raw
+  divs stay unclosed in pandoc and truncate the TOC (same log)
 - History: `logs/` (prune record: `logs/2026-09-02_bob-prune.md`)
