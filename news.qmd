@@ -1,0 +1,16 @@
+---
+title: "News"
+listing:
+  id: news-all
+  contents: news.yml
+  template: news-listing.ejs
+  sort: "date desc"
+  date-format: "MMM D, YYYY"
+---
+
+<div class="belt-bar--sm"></div>
+
+Announcements, new papers, talks, and the occasional piece of writing that lands somewhere other than a journal. Newest first.
+
+::: {#news-all}
+:::

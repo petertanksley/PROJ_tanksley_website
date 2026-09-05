@@ -1,0 +1,12 @@
+<ul class="newslist">
+<% for (const item of items) { %>
+<li>
+<span class="when"><%= item.date %></span>
+<span>
+<% if (item.path) { %><a href="<%= item.path %>" class="news-title"<% if (String(item.path).startsWith("http")) { %> target="_blank" rel="noopener"<% } %>><%= item.title %></a><% } else { %><span class="news-title"><%= item.title %></span><% } %>
+<% if (item.source) { %><span class="source"><%= item.source %></span><% } %>
+<% if (item.description) { %><span class="blurb"><%= item.description %></span><% } %>
+</span>
+</li>
+<% } %>
+</ul>

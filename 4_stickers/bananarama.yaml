@@ -101,3 +101,44 @@ images:
       A human skull with softly glowing orange eye sockets resting on a
       stack of dog-eared paperback novels, one book lying open in front
       of it, a lit candle beside the stack.
+
+  # Round 2 (2026-09-05): one clean subject per hex, centered, nothing
+  # tangential — these read at 92px on the CV band, so anything that needs
+  # magnifying to parse is cut. Peter's face plus one mark per career phase.
+  - name: puzzled
+    description: >
+      Close-up portrait, head and shoulders only, of a man with the face of
+      [refs/peter] — medium-brown hair and a short brown beard, not red,
+      not strawberry blonde — wearing a plain black henley shirt. He looks
+      puzzled: one eyebrow raised, brow furrowed, mouth slightly open, as
+      if an experiment just gave the wrong answer. He holds up a single
+      round glass flask in one hand, and it gives off a curl of smoke in a
+      completely unexpected bright color, which he is staring at. Warm
+      candlelight on his face. Plain dark stone wall behind him, softly
+      out of focus. Nothing else in the picture.
+
+  - name: criminology
+    description: >
+      A single brass magnifying glass with a dark wooden handle, lying on
+      one sheet of aged parchment that is pinned at its corner by a small
+      brass pin. From that pin, one length of red string runs off the
+      edge of the frame. The parchment is blank. Plain dark wooden table
+      surface behind, candlelit. Nothing else in the picture.
+
+  - name: genomics
+    description: >
+      A single round glass laboratory flask standing on a plain dark
+      table. Rising out of its neck, like glowing vapor, is one DNA
+      double helix, softly luminous and warm gold. A single honeybee has
+      landed on the helix strand near the top. Plain dark stone wall
+      behind, softly out of focus, candlelit. Nothing else in the
+      picture.
+
+  - name: responders
+    description: >
+      A single firefighter's helmet, dark leather with a brass front
+      plate that is completely blank, resting on a plain stone ledge.
+      Behind it stand three simple wax candles in a row, burned down to
+      three different heights, the tallest still lit, the middle one
+      guttering, the shortest gone out. Plain dark stone wall behind.
+      Nothing else in the picture.

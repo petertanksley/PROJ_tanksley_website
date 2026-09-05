@@ -10,7 +10,12 @@ set.seed(20260902)
 
 stickers <- c(research = "Research hex sticker",
               projects = "Projects hex sticker",
-              `left-hand-thoughts` = "Left-hand Thoughts hex sticker")
+              `left-hand-thoughts` = "Left-hand Thoughts hex sticker",
+              # round 2 (2026-09-05): Peter's puzzled face + one mark per career phase
+              puzzled = "Puzzled Peter hex sticker",
+              criminology = "Criminology hex sticker",
+              genomics = "Genomics hex sticker",
+              responders = "First responder mortality hex sticker")
 
 n_rows <- 22          # enough to cover a tall viewport; container clips the rest
 n_cols <- 3           # col 1 is flush right (half off-screen on shifted rows)
@@ -33,10 +38,11 @@ col_of <- function(r, c) (c - 1) - ifelse(r %% 2 == 0, 0.5, 0)
 # --- allocation: every art sticker goes to a fully visible cell -------------
 # Eligible = filled, not the half-off-screen edge column, not the outer column
 # (clipped by the band's width / gutter fade), and within the rows a typical
-# viewport shows below the navbar. Sampled without replacement; as more
+# viewport shows below the navbar (rows 3-14 since the band grew to seven
+# art stickers). Sampled without replacement; as more
 # stickers are made, add them to `stickers` and they get allocated too.
 eligible <- which(filled & outer(seq_len(n_rows), seq_len(n_cols), col_of) >= 0 &
-                  col(filled) <= 2 & row(filled) %in% 3:11, arr.ind = TRUE)
+                  col(filled) <= 2 & row(filled) %in% 3:14, arr.ind = TRUE)
 stopifnot(nrow(eligible) >= length(stickers))
 # Spread down the band: draw one cell at a time and exclude cells within
 # `min_gap` rows of it, so no two stickers sit adjacent. If the band runs out

@@ -148,18 +148,30 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
     margin-top: 1.2rem;
     a { margin-right: 1.1rem; white-space: nowrap; }
   }
-  .masthead-photo img {
-    width: 200px;
-    height: 231px;          // point-up hexagon: h = w / 0.866
-    object-fit: cover;
-    display: block;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+// Sticker collage in the masthead (replaced the hexagon-clipped headshot
+// 2026-09-05; the real photo stays on the About page). Four www/hex/*.png
+// stickers on a point-up lattice as a diamond: one, two, one. Each img
+// carries --x (in hex widths) and --y (row); rows step 3/4 of a hex height.
+.hexcollage {
+  --w: 108px;
+  --h: calc(var(--w) / 0.866);
+  --gap: 3px;
+  --step: calc(var(--h) * 0.75 + var(--gap) * 0.87);
+  position: relative;
+  width: calc(var(--w) * 2 + var(--gap));
+  height: calc(var(--step) * 2 + var(--h));
+  img {
+    position: absolute;
+    width: var(--w); height: var(--h);
+    left: calc(var(--x) * (var(--w) + var(--gap)));
+    top:  calc(var(--y) * var(--step));
   }
 }
 @media (max-width: 640px) {
   .masthead { grid-template-columns: 1fr; gap: 1.5rem; }
-  .masthead .masthead-photo img { width: 140px; height: 162px; }
   .masthead .masthead-photo { order: -1; }
+  .hexcollage { --w: 76px; margin: 0 auto; }
 }
 @keyframes masthead-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .masthead { animation: none; } }
@@ -273,6 +285,26 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   .venue { font-style: italic; color: $ink-soft; font-size: 0.93rem; }
   .authors { display: block; color: $ink-soft; font-size: 0.88rem; margin-top: 0.15rem; }
 }
+
+// ---------------------------------------------------------------------------
+// News list (news.yml via news-listing.ejs; index shows the latest few,
+// news.qmd shows all). Same grid as .worklist with a wider date column.
+// ---------------------------------------------------------------------------
+.newslist { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.newslist li {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid $rule;
+  &:last-child { border-bottom: 1px solid $rule; }
+  .when { font-family: $font-family-monospace; font-size: 0.82rem; color: $ink-soft; padding-top: 0.2em; white-space: nowrap; }
+  .news-title { display: block; }
+  .source { font-style: italic; color: $ink-soft; font-size: 0.93rem; }
+  .blurb { display: block; color: $ink-soft; font-size: 0.88rem; margin-top: 0.15rem; }
+}
+.newslist-more { margin-top: 0.6rem; }
+@media (max-width: 640px) { .newslist li { grid-template-columns: 1fr; gap: 0.2rem; } }
 
 // ---------------------------------------------------------------------------
 // Projects list

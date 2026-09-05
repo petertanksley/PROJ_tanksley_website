@@ -24,6 +24,8 @@ website:
         href: 2_cv/tanksley_cv.qmd
       - text: Projects
         href: projects.qmd
+      - text: News
+        href: news.qmd
       - text: Left-hand Thoughts
         href: 3_posts/posts.qmd
       - text: About

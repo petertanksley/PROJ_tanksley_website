@@ -1,6 +1,13 @@
 ---
 title: ""
 pagetitle: "Peter T. Tanksley"
+listing:
+  id: news-home
+  contents: news.yml
+  template: news-listing.ejs
+  sort: "date desc"
+  max-items: 3
+  date-format: "MMM D, YYYY"
 ---
 
 ::: {.masthead}
@@ -21,9 +28,23 @@ I study the people who run toward emergencies. Most of my work asks how the job 
 :::
 
 ::: {.masthead-photo}
-![](www/tanksley_peter_headshot.png){fig-alt="Headshot of Peter T. Tanksley"}
+```{=html}
+<div class="hexcollage" role="img" aria-label="Four pixel-art hex stickers: Peter looking puzzled at a flask smoking the wrong colour, and one mark for each phase of his career: a magnifying glass on parchment for criminology, a flask releasing a DNA helix with a honeybee on it for genomics, and a firefighter helmet with three candles for first responder mortality.">
+<img src="www/hex/puzzled.png"     alt="" style="--x:0.5;--y:0">
+<img src="www/hex/criminology.png" alt="" style="--x:0;--y:1">
+<img src="www/hex/genomics.png"    alt="" style="--x:1;--y:1">
+<img src="www/hex/responders.png"  alt="" style="--x:0.5;--y:2">
+</div>
+```
 :::
 :::
+
+<div class="eyebrow" style="margin-top:3.5rem">News</div>
+
+::: {#news-home}
+:::
+
+<p class="mono newslist-more"><a href="news.qmd">All news →</a></p>
 
 <div class="eyebrow" style="margin-top:3.5rem">What I work on</div>
 

@@ -8,7 +8,7 @@ deadline: null
 target: Personal academic website with CV, about page, and blog
 effort_remaining: ~0 (monitoring; DOI/volume for AJPH and Nature papers when assigned)
 weekly_commitment: 1h
-last_updated: 2026-09-02
+last_updated: 2026-09-05
 repo: https://github.com/petertanksley/petertanksley.github.io
 blockers: null
 blocking_others: null
@@ -25,17 +25,14 @@ sync: github
 
 ## Start Here Next Session
 
-- Scope the news/announcements feed: where it lives on the site, how entries are stored
-  (Quarto listing vs. hand-maintained section), and how it renders alongside the redesign.
-- First entry is the Substack piece (link under This Week). Build once scoped.
+- Review, commit, and push the 2026-09-05 work (four new stickers, seven-sticker band, news
+  feed + navbar entry, landing-page sticker collage) — uncommitted in the working tree; see `logs/2026-09-05_round2-stickers-and-news-feed.md`.
 - Check Crossref for volume/pages on the Nature paper before touching the CV.
 
 ## This Week
 
-- [ ] News/announcements feed (recorded 2026-09-01; not yet scoped or built):
-      (a) add an announcements/news section to the site; (b) first entry = the published
-      Substack article, "The Mortality Numbers Agency Heads Actually Need" —
-      https://tacticalscience.substack.com/p/the-mortality-numbers-agency-heads
+- [ ] Commit + push 2026-09-05 changes after Peter reviews the rendered pages
+- [ ] Optional: phase stickers beside the matching Research-page sections
 
 ## Upcoming Milestones
 
@@ -51,8 +48,12 @@ sync: github
   (PUPPETEER_SKIP_DOWNLOAD / PUPPETEER_EXECUTABLE_PATH), install retries kept, 20-min job
   cap, superseded runs auto-cancelled
 - CV source: `2_cv/tanksley_cv.qmd`; CSS: `2_cv/tanksley_cv.css`
-- Hex stickers: finals in `www/hex/` + anchor `www/hearth.jpg`; pipeline in `4_stickers/`;
-  style guide and prompt lessons in `logs/2026-09-01_sticker-generation.md`
+- Hex stickers: finals in `www/hex/` (7 art + blank) + anchor `www/hearth.jpg`; pipeline in
+  `4_stickers/`; style guide and prompt lessons in `logs/2026-09-01_sticker-generation.md`;
+  round-2 picks and the "one clean subject" rule in `logs/2026-09-05_round2-stickers-and-news-feed.md`
+- News feed: `news.yml` (add entries here) → `news-listing.ejs` → `news.qmd` + homepage
+  (latest 3); navbar entry between Projects and Left-hand Thoughts. Quarto's EJS rejects `<%# %>` comments.
+- Landing page masthead = 4-sticker hex collage (`.hexcollage`); real headshot lives on About only
 - CV hex band: `4_stickers/hexband.R` → `_hexband.qmd` (included by the CV). New stickers:
   append to `stickers` in the script and rerun. Design notes in
   `logs/2026-09-02_hex-band-and-cv-fixes.md`

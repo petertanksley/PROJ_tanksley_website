@@ -1,0 +1,12 @@
+# News and announcements. One entry per item, newest anywhere (the listing
+# sorts by date). Rendered by news-listing.ejs on index.qmd (latest 3) and
+# news.qmd (all). Fields: date (YYYY-MM-DD), title, path (link, optional),
+# source (venue label, optional), description (one sentence, optional).
+- date: 2026-08-31
+  title: "The Mortality Numbers Agency Heads Actually Need"
+  path: https://tacticalscience.substack.com/p/the-mortality-numbers-agency-heads
+  source: Tactical Science
+  description: >
+    An essay on the mortality figures a chief can act on: risks that run to suicide
+    and accidents early in a career and to cancer and heart disease after 45, and
+    what that means for how wellness programs are aimed.

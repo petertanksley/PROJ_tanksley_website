@@ -5,22 +5,22 @@
 <img src="/www/hex/blank.png" alt="" style="--c:1;--r:0">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:1">
 <img src="/www/hex/blank.png" alt="" style="--c:0.5;--r:1">
-<img src="/www/hex/projects.png" alt="Projects hex sticker" style="--c:0;--r:2">
+<img src="/www/hex/genomics.png" alt="Genomics hex sticker" style="--c:0;--r:2">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:3">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:5">
-<img src="/www/hex/research.png" alt="Research hex sticker" style="--c:0.5;--r:5">
+<img src="/www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker" style="--c:0.5;--r:5">
 <img src="/www/hex/blank.png" alt="" style="--c:0;--r:6">
 <img src="/www/hex/blank.png" alt="" style="--c:1;--r:6">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:7">
-<img src="/www/hex/blank.png" alt="" style="--c:0.5;--r:7">
+<img src="/www/hex/projects.png" alt="Projects hex sticker" style="--c:0.5;--r:7">
 <img src="/www/hex/blank.png" alt="" style="--c:0;--r:8">
-<img src="/www/hex/left-hand-thoughts.png" alt="Left-hand Thoughts hex sticker" style="--c:1;--r:8">
+<img src="/www/hex/responders.png" alt="First responder mortality hex sticker" style="--c:1;--r:8">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:9">
 <img src="/www/hex/blank.png" alt="" style="--c:0;--r:10">
-<img src="/www/hex/blank.png" alt="" style="--c:1;--r:10">
+<img src="/www/hex/research.png" alt="Research hex sticker" style="--c:1;--r:10">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:11">
-<img src="/www/hex/blank.png" alt="" style="--c:0.5;--r:11">
-<img src="/www/hex/blank.png" alt="" style="--c:0;--r:12">
+<img src="/www/hex/criminology.png" alt="Criminology hex sticker" style="--c:0.5;--r:11">
+<img src="/www/hex/puzzled.png" alt="Puzzled Peter hex sticker" style="--c:0;--r:12">
 <img src="/www/hex/blank.png" alt="" style="--c:1;--r:12">
 <img src="/www/hex/blank.png" alt="" style="--c:-0.5;--r:13">
 <img src="/www/hex/blank.png" alt="" style="--c:0;--r:14">
