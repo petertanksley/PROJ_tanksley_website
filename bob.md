@@ -25,13 +25,12 @@ sync: github
 
 ## Start Here Next Session
 
-- Review, commit, and push the 2026-09-05 work (four new stickers, seven-sticker band, news
-  feed + navbar entry, landing-page sticker collage) — uncommitted in the working tree; see `logs/2026-09-05_round2-stickers-and-news-feed.md`.
+- Nothing urgent. 2026-09-05 work (stickers, collage, news feed) is live; add news items to
+  `news.yml` as they happen.
 - Check Crossref for volume/pages on the Nature paper before touching the CV.
 
 ## This Week
 
-- [ ] Commit + push 2026-09-05 changes after Peter reviews the rendered pages
 - [ ] Optional: phase stickers beside the matching Research-page sections
 
 ## Upcoming Milestones
