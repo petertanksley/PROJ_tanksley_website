@@ -1,0 +1,11 @@
+<ul class="newslist">
+<% for (const item of items) { const blurb = item.description ? String(item.description).trim().replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') : ""; const href = item.id ? `news.html#${item.id}` : "news.html"; %>
+<li>
+<span class="when"><%= item.date %></span>
+<span>
+<a class="news-title" href="<%= href %>"><%= item.title %></a>
+<% if (blurb) { %><span class="blurb"><%= blurb %></span><% } %>
+</span>
+</li>
+<% } %>
+</ul>

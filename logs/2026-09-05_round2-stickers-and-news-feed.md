@@ -39,12 +39,24 @@
    career order. The real headshot stays on the About page by Peter's instruction. Collage is
    108px cells on desktop, 76px centred on mobile. Full site re-rendered (CV PDF included).
 
+5. **News feed restructured to the Research Ring pattern** (after Peter saw the first two entries).
+   Peter's rule for entries: the **headline says what the thing is, in his irreverent voice**, never
+   the article/journal/newsletter name; the **blurb is one lighthearted sentence**, no info dump.
+   Links live in the blurb as markdown. `news-listing-home.ejs` (homepage) strips them to plain text
+   and points the headline at `news.html#<id>`; `news-listing.ejs` (news page) renders them as
+   anchors and gives each entry its `id`. Second entry added: the Schwaba et al. Nature paper
+   (published online 2026-09-02; Crossref still has no volume/pages). Fields dropped: `path`,
+   `source`. Modelled on `PROJ_researchring_website/_media_entries.yaml` + `_render_media.R`
+   (landing strip → media-page anchor; description carries the outbound links).
+
 ## Gotchas worth keeping
 
 - Quarto's bundled EJS does **not** accept `<%# comment %>` tags — the render dies with a bare
   `SyntaxError: Invalid or unexpected token` and a Deno stack trace. Comment the template in
   an adjacent file or not at all.
 - Listing `date-format` does apply inside custom EJS templates (`item.date` arrives formatted).
+- Quarto's EJS does **not** HTML-escape `<%= %>` (it is raw output), and `<%- %>` comes out
+  *escaped*. Reverse of standard EJS. Use `<%= %>` for HTML you built in the template.
 - Judge sticker candidates framed, not square: the point-up hex keeps the top/bottom apexes
   and loses the four corners, so tall centred subjects survive and anything in a corner dies.
 - zsh: a bare `=====` separator in a Bash command is `=cmd` expansion and errors; quote it.

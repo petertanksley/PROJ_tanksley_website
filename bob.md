@@ -50,12 +50,14 @@ sync: github
 - Hex stickers: finals in `www/hex/` (7 art + blank) + anchor `www/hearth.jpg`; pipeline in
   `4_stickers/`; style guide and prompt lessons in `logs/2026-09-01_sticker-generation.md`;
   round-2 picks and the "one clean subject" rule in `logs/2026-09-05_round2-stickers-and-news-feed.md`
-- News feed: `news.yml` (add entries here) → `news-listing.ejs` → `news.qmd` + homepage
-  (latest 3); navbar entry between Projects and Left-hand Thoughts. Quarto's EJS rejects `<%# %>` comments.
+- News feed: `news.yml` (add entries here; headline = what the thing is, blurb = one irreverent
+  sentence with markdown links) → `news-listing.ejs` (news page, links) + `news-listing-home.ejs`
+  (homepage, links stripped, headline → `news.html#id`); homepage shows latest 3; navbar entry between Projects and Left-hand Thoughts. Quarto's EJS rejects `<%# %>` comments.
 - Landing page masthead = 4-sticker hex collage (`.hexcollage`); real headshot lives on About only
 - CV hex band: `4_stickers/hexband.R` → `_hexband.qmd` (included by the CV). New stickers:
   append to `stickers` in the script and rerun. Design notes in
   `logs/2026-09-02_hex-band-and-cv-fixes.md`
 - CV publication entries must be fenced divs (`::: {.pub-item}`), never raw `<div>` — raw
   divs stay unclosed in pandoc and truncate the TOC (same log)
+- Conventions (voice, content rules, feed, stickers, gotchas): `CLAUDE.md` (added 2026-09-05)
 - History: `logs/` (prune record: `logs/2026-09-02_bob-prune.md`)

@@ -1,12 +1,28 @@
-# News and announcements. One entry per item, newest anywhere (the listing
-# sorts by date). Rendered by news-listing.ejs on index.qmd (latest 3) and
-# news.qmd (all). Fields: date (YYYY-MM-DD), title, path (link, optional),
-# source (venue label, optional), description (one sentence, optional).
-- date: 2026-08-31
-  title: "The Mortality Numbers Agency Heads Actually Need"
-  path: https://tacticalscience.substack.com/p/the-mortality-numbers-agency-heads
-  source: Tactical Science
+# News. One entry per item; the listing sorts by date, newest first.
+# Rendered on index.qmd (latest 3, via news-listing-home.ejs) and news.qmd
+# (everything, via news-listing.ejs). Mirrors the Research Ring site's
+# _media_entries.yaml pattern.
+#
+# Fields
+#   date         YYYY-MM-DD
+#   id           short slug; the news page anchors the entry here and the
+#                homepage headline links to news.html#<id>
+#   title        the headline. Say WHAT THE THING IS, in Peter's voice, not
+#                the name of the article/journal/newsletter
+#   description  ONE lighthearted sentence. Markdown links [text](url) are
+#                allowed and encouraged: they render on the news page and
+#                are stripped to plain text on the homepage
+- date: 2026-09-02
+  id: nature-personality-2026
+  title: "Career achievement unlocked: get published in Nature. Check."
   description: >
-    An essay on the mortality figures a chief can act on: risks that run to suicide
-    and accidents early in a career and to cancer and heart disease after 45, and
-    what that means for how wellness programs are aimed.
+    I was part of a [project on the genetics of
+    personality](https://doi.org/10.1038/s41586-026-10992-9) that took years to
+    come together, and boy, did it finally land.
+- date: 2026-08-31
+  id: tactical-science-mortality-2026
+  title: "Wrote a thing for police chiefs about which mortality numbers actually matter"
+  description: >
+    Over on [Tactical Science](https://tacticalscience.substack.com/p/the-mortality-numbers-agency-heads),
+    an essay on the death statistics a chief can do something with, and why the
+    answer changes at 45.

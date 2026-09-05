@@ -4,7 +4,7 @@ pagetitle: "Peter T. Tanksley"
 listing:
   id: news-home
   contents: news.yml
-  template: news-listing.ejs
+  template: news-listing-home.ejs
   sort: "date desc"
   max-items: 3
   date-format: "MMM D, YYYY"
