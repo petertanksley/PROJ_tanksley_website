@@ -8,12 +8,12 @@ title: "Projects"
 ![](www/hex/projects.png){fig-alt="Pixel-art hex sticker: a workbench crowded with tools and potion flasks, a glowing hexagonal talisman at its center."}
 :::
 
-Side projects, mostly dashboards and tooling, occasionally an over-engineered solution to a small problem. Everything here is built in R unless noted, and everything is open.
+Side projects: dashboards, tooling, and the occasional over-engineered solution to a problem nobody asked me to solve. Everything is built in R unless noted, and everything is open, so you can see exactly how over-engineered.
 
 ::: {.project}
 <h3>Presumptive Laws Dashboard</h3><span class="tag tag--wip">under construction</span>
 
-A state-by-state legislative history of first responder presumptive workers' compensation laws: which conditions are presumed work-related, for whom, and since when. Statute text is traced to primary sources rather than advocacy summaries. Built so that researchers and practitioners can see fifty scattered statutes in one place.
+A state-by-state history of first responder presumptive workers' compensation laws: which conditions get presumed work-related, for whom, and since when. Every claim is traced to the statute itself, not to somebody's summary of it. Fifty scattered laws in one place, so nobody else has to do what I did to build it.
 
 <div class="stack">R · Quarto · Shiny <a href="https://github.com/ALERRT-Research/PROJ_presumptive_laws">{{< fa brands github >}} source</a></div>
 :::

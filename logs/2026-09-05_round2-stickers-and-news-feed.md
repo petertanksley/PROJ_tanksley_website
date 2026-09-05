@@ -49,6 +49,25 @@
    `source`. Modelled on `PROJ_researchring_website/_media_entries.yaml` + `_render_media.R`
    (landing strip → media-page anchor; description carries the outbound links).
 
+6. **Landing-page sections made distinct** (Peter: "blend together into text and horizontal
+   lines"). Mono eyebrows replaced by `.section-head` display headings (Cormorant 1.7rem) with the
+   belt bar beneath, as on the CV; "What I work on" moved onto a full-width tinted band
+   (`.column-screen .band`, `$paper-deep`, hairline top/bottom) with `.band-inner` sized to the
+   body column; news rows switched from hairlines to a 3px teal left rule with whitespace between
+   entries so the feed no longer rhymes with `.worklist`. Section spacing 4rem.
+
+7. **Voice pass across the site.** Prose on index (masthead, pillars), research, projects, about,
+   and the news intro rewritten in Peter's irreverent register. Two refinements from Peter's
+   review, both now in `CLAUDE.md`: **no sass about first responders dying** (state it plainly;
+   the about page's "train, live, die, roughly in that order" was cut for this), and CV /
+   publication titles stay formal. GEB line capitalised: "Genes, Environment, Behavior."
+8. **Research page:** one hex per section (responders → mortality, criminology → training and
+   public opinion, genomics → origins), page-top research hex removed; `.hex-mark--section`
+   118px, `h2 { clear: both }`. Mortality paragraph no longer names a dataset (Peter: general
+   pages describe the work, not the sources). Origins reframed as **three careers**:
+   criminologist, biosocial researcher, occupational researcher of policing.
+9. LinkedIn added to the masthead link row.
+
 ## Gotchas worth keeping
 
 - Quarto's bundled EJS does **not** accept `<%# comment %>` tags — the render dies with a bare
@@ -59,6 +78,9 @@
   *escaped*. Reverse of standard EJS. Use `<%= %>` for HTML you built in the template.
 - Judge sticker candidates framed, not square: the point-up hex keeps the top/bottom apexes
   and loses the four corners, so tall centred subjects survive and anything in a corner dies.
+- Quarto `.column-screen` is the right tool for a full-bleed band (no `50vw` margin tricks, no
+  scrollbar overflow); re-constrain the inner content to `$grid-body-width` with no side
+  padding at desktop, or it sits ~1rem right of the surrounding text column.
 - zsh: a bare `=====` separator in a Bash command is `=cmd` expansion and errors; quote it.
 
 ## Not done / open

@@ -19,11 +19,11 @@ listing:
 [Research Scientist, ALERRT Center · Texas State University]{.masthead-role}
 
 ::: {.masthead-thesis}
-I study the people who run toward emergencies. Most of my work asks how the job of a first responder shapes health and mortality, mainly with national death-certificate data and biomarkers. The rest is about police: how they are trained to decide under pressure, and what the public makes of the decisions they end up making.
+I study the people who run toward emergencies, and what all that running does to them. Most of my work asks how being a first responder shapes health and mortality, using national death-certificate data and the occasional vial of blood. The rest is about police: how they're trained to make hard calls in seconds, and why the public and the officers watching the same call so rarely agree on it.
 :::
 
 ::: {.masthead-links}
-[{{< fa envelope >}} Email](mailto:peter_tanksley@txstate.edu) [{{< fa brands google-scholar >}} Scholar](https://scholar.google.com/citations?user=YnIBrB8AAAAJ&hl=en) [{{< fa brands orcid >}} ORCID](https://orcid.org/0000-0002-3449-2838) [{{< fa brands github >}} GitHub](https://github.com/petertanksley) [{{< fa file-lines >}} CV](2_cv/tanksley_cv.qmd)
+[{{< fa envelope >}} Email](mailto:peter_tanksley@txstate.edu) [{{< fa brands google-scholar >}} Scholar](https://scholar.google.com/citations?user=YnIBrB8AAAAJ&hl=en) [{{< fa brands orcid >}} ORCID](https://orcid.org/0000-0002-3449-2838) [{{< fa brands github >}} GitHub](https://github.com/petertanksley) [{{< fa brands linkedin >}} LinkedIn](https://www.linkedin.com/in/peter-tanksley-107008121) [{{< fa file-lines >}} CV](2_cv/tanksley_cv.qmd)
 :::
 :::
 
@@ -39,32 +39,39 @@ I study the people who run toward emergencies. Most of my work asks how the job 
 :::
 :::
 
-<div class="eyebrow" style="margin-top:3.5rem">News</div>
+::: {.landing-section}
+<h2 class="section-head">News</h2>
 
 ::: {#news-home}
 :::
 
 <p class="mono newslist-more"><a href="news.qmd">All news →</a></p>
+:::
 
-<div class="eyebrow" style="margin-top:3.5rem">What I work on</div>
+:::: {.column-screen .band}
+::: {.band-inner}
+<h2 class="section-head">What I work on</h2>
 
 ::: {.pillars}
 ::: {.pillar}
 ### First responder health and mortality
-How law enforcement officers and firefighters die, and what in the work gets them there. Population-wide surveillance data, cardiometabolic biomarkers, and the policy that ought to follow from both.
+How officers and firefighters die, and which parts of the job get them there. The evidence is death certificates from across the country, blood drawn in fire stations, and the workers' compensation laws that decide whether any of it counts as work-related.
 
 [Read more →](research.qmd#health){.more}
 :::
 
 ::: {.pillar}
 ### Police training and public opinion
-How officers are trained to make high-stakes decisions, and how those decisions look to the public versus to the officers themselves. The two audiences disagree more often than either expects.
+How officers are trained to make the worst decision of their week in under two seconds, and how that decision looks afterward to the public versus the people who make them. Spoiler: the two audiences did not watch the same encounter.
 
 [Read more →](research.qmd#training){.more}
 :::
 :::
+:::
+::::
 
-<div class="eyebrow" style="margin-top:3.5rem">Selected work</div>
+::: {.landing-section}
+<h2 class="section-head">Selected work</h2>
 
 <ul class="worklist">
 <li><span class="year">2026</span><span><span class="work-title">Correctional officer mortality in the United States, 2020–2023: Evidence from the National Occupational Mortality Surveillance program</span><span class="venue">American Journal of Public Health (in press)</span><span class="authors">Tanksley, Logan, &amp; Barnes</span></span></li>
@@ -75,3 +82,4 @@ How officers are trained to make high-stakes decisions, and how those decisions 
 </ul>
 
 <p class="mono" style="margin-top:1rem"><a href="2_cv/tanksley_cv.qmd">Full CV →</a></p>
+:::

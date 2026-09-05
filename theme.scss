@@ -12,6 +12,7 @@ $teal-text: #1F7F7A;   // link text; 4.6:1 on $paper
 $indigo:    #3B0F5C;
 $belt-red:  #B3261E;
 $rule:      #D9D6CE;
+$paper-deep: #F2F0E9;  // tinted band behind a landing-page section
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -177,6 +178,33 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
 @media (prefers-reduced-motion: reduce) { .masthead { animation: none; } }
 
 // ---------------------------------------------------------------------------
+// Landing-page sections (2026-09-05): a display heading with the belt bar
+// under it opens each section, and the middle one sits on a full-width tinted
+// band so the page reads as distinct blocks rather than one run of hairlines.
+// ---------------------------------------------------------------------------
+.landing-section { margin-top: 4rem; }
+.section-head {
+  font-family: $font-display;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.1;
+  margin: 0 0 1.1rem;
+  &::after { @include belt-bar(48px, 4px); margin-top: 0.5rem; }
+}
+.band {
+  background: $paper-deep;
+  margin-top: 4rem;
+  padding: 3rem 0 3.25rem;
+  border-top: 1px solid $rule;
+  border-bottom: 1px solid $rule;
+}
+// exactly the body column at desktop widths (so headings line up with the
+// sections above and below), 1rem side margins once the viewport is narrower
+.band-inner { width: min(100% - 2rem, #{$grid-body-width}); margin: 0 auto; }
+.band .pillars { margin-top: 0.5rem; }
+.band .pillar p { color: $ink; }
+
+// ---------------------------------------------------------------------------
 // Pillars (index teaser + research page)
 // ---------------------------------------------------------------------------
 .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem; }
@@ -197,8 +225,14 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
   figure, p { margin: 0; }
   img { width: 100%; display: block; }
 }
+// Per-section marks (research page): smaller, tucked beside the section's
+// first paragraph; the h2 above clears any float left over from the previous
+// section so a mark never bleeds into the next heading.
+.hex-mark--section { width: 118px; margin: 0.15rem 0 0.75rem 1.5rem; }
+h2 { clear: both; }
 @media (max-width: 640px) {
   .hex-mark { float: none; width: 120px; margin: 0.5rem auto 1.25rem; }
+  .hex-mark--section { width: 96px; }
 }
 
 // Hex wall (hexwall.qmd demo): honeycomb of the www/hex/*.png stickers.
@@ -290,15 +324,17 @@ h3 { font-size: 1.2rem; margin-top: 1.8rem; }
 // News list (news.yml; index shows the latest few via news-listing-home.ejs
 // with links stripped, news.qmd shows all via news-listing.ejs with links). Same grid as .worklist with a wider date column.
 // ---------------------------------------------------------------------------
+// Rows carry a teal left rule instead of hairlines, so the feed reads as a
+// different object from the publication list (.worklist) below it.
 .newslist { list-style: none; padding: 0; margin: 0.5rem 0 0; }
 .newslist li {
   scroll-margin-top: 5rem;   // anchored entries land below the navbar
   display: grid;
   grid-template-columns: 7.5em 1fr;
   gap: 1rem;
-  padding: 0.75rem 0;
-  border-top: 1px solid $rule;
-  &:last-child { border-bottom: 1px solid $rule; }
+  padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid $teal;
+  & + li { margin-top: 1.25rem; }
   .when { font-family: $font-family-monospace; font-size: 0.82rem; color: $ink-soft; padding-top: 0.2em; white-space: nowrap; }
   .news-title { display: block; }
   .blurb { display: block; color: $ink-soft; font-size: 0.88rem; margin-top: 0.15rem; }

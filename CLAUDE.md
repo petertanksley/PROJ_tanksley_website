@@ -15,6 +15,9 @@ user-facing (homepage, news, about, project blurbs, post intros):
 - Do not harp on credentials or numbers (author counts, impact factors, dollar figures)
   unless the number *is* the joke. Peter would rather understate.
 - Confident, not hedged. No "interestingly", "it is worth noting", "I am honored to".
+- **No sass about first responders dying.** Saying that Peter studies mortality is fine; jokes,
+  glibness, or vivid flourishes about the deaths themselves are not. State it plainly and
+  save the irreverence for the surrounding material (methods, career, R, himself).
 - Worked examples, both approved:
   - Headline: "Career achievement unlocked: get published in Nature. Check."
     Blurb: "I was part of a project on the genetics of personality that took years to

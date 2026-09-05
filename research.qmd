@@ -4,15 +4,15 @@ title: "Research"
 
 <div class="belt-bar--sm"></div>
 
-::: {.hex-mark}
-![](www/hex/research.png){fig-alt="Pixel-art hex sticker: a candlelit desk in a stone study, a glowing survival curve pinned to the wall above it."}
-:::
-
-I work in the Research Ring of the [ALERRT Center](https://alerrt.org) at Texas State University, the group that trains law enforcement for active attacks and then studies, among other things, the people doing the responding. Our team's current projects are on the [ALERRT Research site](https://www.alerrt-research.org). Here is what I do there.
+I work in the Research Ring at the [ALERRT Center](https://alerrt.org), Texas State University. ALERRT trains law enforcement for active attacks. The Ring is the part of the building that asks awkward questions afterward, including about the people doing the responding. The team's current projects live on the [ALERRT Research site](https://www.alerrt-research.org). This page is the part of it that's my fault.
 
 ## First responder health and mortality {#health}
 
-This is the center of my work. First responders are exposed to shift work, chronic stress, violence, and toxic environments, and the field has surprisingly little population-level evidence about what that exposure does over a career. My main source is national death-certificate data from the National Occupational Mortality Surveillance system, which lets me describe who dies of what and how that differs from comparable civilians. Biomarkers collected in the field (cardiometabolic, inflammatory) fill in the years before the death certificate, and policy data on presumptive workers' compensation laws tell us which of those differences anyone is actually doing something about.
+::: {.hex-mark .hex-mark--section}
+![](www/hex/responders.png){fig-alt="Pixel-art hex sticker: a firefighter's helmet on a stone ledge, three candles behind it burned to different heights."}
+:::
+
+This is the center of my work. First responders take on shift work, chronic stress, violence, and toxic exposures as conditions of the job, and the field has remarkably little population-level evidence about what a career of that does to a person. I work with death-certificate data to describe who dies of what, and how that compares with everyone else who works for a living. I measure health in the years before that with self-reports and biomarkers collected in the field. And I study the policies that shape first responder health, presumptive workers' compensation laws especially, because they decide which of those outcomes the law is willing to call work-related.
 
 <ul class="worklist">
 <li><span class="year">2025</span><span><a href="https://doi.org/10.1016/j.lana.2025.101270" class="work-title">Mortality among law enforcement officers in the United States: A population-wide analysis of the National Occupational Mortality Surveillance data, 2020–2023</a><span class="venue">The Lancet Regional Health – Americas</span></span></li>
@@ -22,7 +22,11 @@ This is the center of my work. First responders are exposed to shift work, chron
 
 ## Police training and public opinion {#training}
 
-The ALERRT Center trains law enforcement for the worst days of their careers, and that gives us a rare view into how officers are taught to decide under pressure. I study the training itself (what transfers, what doesn't, how you would even measure it) and the public's reading of the decisions that come out the other end. Officers and civilians often watch the same encounter and see different things. Factorial survey experiments let us find exactly where the two audiences part ways.
+::: {.hex-mark .hex-mark--section}
+![](www/hex/criminology.png){fig-alt="Pixel-art hex sticker: a brass magnifying glass lying on a pinned sheet of parchment, a red string running from the pin."}
+:::
+
+ALERRT trains officers for the worst day of their careers, which gives us an unusually good seat for watching how people are taught to decide under pressure. I study the training itself: what transfers to the street, what evaporates in the parking lot, and how you would even measure the difference. I also study what the public makes of the decisions that come out the other end. Officers and civilians can watch the same encounter and describe two different events. Factorial survey experiments let us find the exact moment the stories diverge.
 
 <ul class="worklist">
 <li><span class="year">2026</span><span><a href="https://doi.org/10.1016/j.jcrimjus.2026.102601" class="work-title">Striking or grappling? Comparing public and officers' perceptions of police use of force</a><span class="venue">Journal of Criminal Justice</span></span></li>
@@ -31,13 +35,17 @@ The ALERRT Center trains law enforcement for the worst days of their careers, an
 
 ## Where I came from {#origins}
 
-My CV reads like two careers stapled together, and in a sense it is. I trained as a criminologist, then spent a postdoc in a behavior-genetics lab studying polygenic scores and DNA methylation: how the biology of children and adolescents registers social disadvantage, and how much of the "genetic effect" in observational studies is really something else. That work is why I still think about health in biological terms, and why the first-responder research keeps reaching for biomarkers rather than stopping at self-report.
+::: {.hex-mark .hex-mark--section}
+![](www/hex/genomics.png){fig-alt="Pixel-art hex sticker: a glass flask releasing a glowing DNA helix, a honeybee resting on the strand."}
+:::
+
+My CV reads like three careers stapled together, because it is. First a criminologist, studying the people who pass through the justice system. Then a biosocial researcher, spending a postdoc in a behavior-genetics lab on polygenic scores and DNA methylation: how the body registers social disadvantage, and how much of the "genetic effect" in observational studies is really something else. Now an occupational researcher of policing, studying the health, wellness, and training of police officers and the other first responders who work alongside them. The middle career is why I still think about health in biological terms, and why the first-responder work keeps reaching for blood samples when a survey would have been cheaper.
 
 ::: {.geb-figure}
 ![Cover of Douglas Hofstadter's *Gödel, Escher, Bach*: a carved block casting the letters G, E, and B as shadows in three directions.](www/geb_cover.png){fig-alt="Cover of Gödel, Escher, Bach: a single carved wooden block lit from three directions, casting the shadows G, E, and B."}
 :::
 
-The habit I took from it is best explained by the cover of Hofstadter's *Gödel, Escher, Bach*: a single carved block that casts a different letter in each direction, depending on where you put the light. Genes, environment, behavior. Most research paradigms light two of the three and assume the third away. I have spent my career shifting the lamp around and asking what matters *from here*. And then from here. And then with two lamps at once. The first-responder work is that same habit pointed at a population that badly needs the attention.
+The habit I took from it is best explained by the cover of Hofstadter's *Gödel, Escher, Bach*: a single carved block that casts a different letter in each direction, depending on where you put the light. Genes, Environment, Behavior. Most research paradigms light two of the three and assume the third away. I have spent my career shifting the lamp around and asking what matters *from here*. And then from here. And then with two lamps at once. The first-responder work is that same habit pointed at a population that badly needs the attention.
 
 <ul class="worklist">
 <li><span class="year">2024</span><span><a href="https://doi.org/10.1177/21677026241260260" class="work-title">Do polygenic indices capture 'direct' effects on child externalizing behavior? Within-family analyses in two longitudinal birth cohorts</a><span class="venue">Clinical Psychological Science</span></span></li>

@@ -10,7 +10,7 @@ listing:
 
 <div class="belt-bar--sm"></div>
 
-Announcements, new papers, talks, and the occasional piece of writing that lands somewhere other than a journal. Newest first.
+Things that happened. New papers, talks, and the occasional piece of writing that escaped peer review. Newest first, because that is how time works.
 
 ::: {#news-all}
 :::
