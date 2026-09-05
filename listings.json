@@ -1,9 +1,17 @@
 [
   {
+    "listing": "/news.html",
+    "items": []
+  },
+  {
     "listing": "/3_posts/posts.html",
     "items": [
       "/3_posts/2024-09-17_lht_birthday_day/index.html",
       "/3_posts/2024-07-07_lht_blog_init/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": []
   }
 ]
