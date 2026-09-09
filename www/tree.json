@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-09-09 12:20",
+    "generated": "2026-09-09 13:38",
     "hex_w": 100,
     "hex_h": 115.47,
     "width": 2781,
@@ -1548,7 +1548,7 @@
       "scored": true,
       "effort": 1,
       "effort_note": null,
-      "blurb": "Preprint",
+      "blurb": null,
       "sticker_src": "www/hex/sm/blank_dark.png",
       "x": 782.4,
       "y": 421.9,
@@ -1597,7 +1597,7 @@
       "scored": true,
       "effort": 4,
       "effort_note": null,
-      "blurb": "Preprint",
+      "blurb": null,
       "sticker_src": "www/hex/sm/blank_dark.png",
       "x": 938.4,
       "y": 331.8,
