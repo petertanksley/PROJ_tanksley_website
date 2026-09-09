@@ -219,7 +219,7 @@ Minor: Biology
 :::
 
 ::: {.pub-item}
-1. Motz, Ryan M., **Peter T. Tanksley**, Hexuan Liu, Tesfaye B. Mersha, & J.C. Barnes.<br>”Every contact leaves a trace: Contact with the criminal justice system, life outcomes, and the intersection with genetics.” [*Current Opinion in Psychology*](https://doi.org/10.1016/j.copsyc.2018.09.008){target="_blank"}, 27, 82-87.
+1. Motz, Ryan M., **Peter T. Tanksley**, Hexuan Liu, Tesfaye B. Mersha, & J.C. Barnes.<br>“Every contact leaves a trace: Contact with the criminal justice system, life outcomes, and the intersection with genetics.” [*Current Opinion in Psychology*](https://doi.org/10.1016/j.copsyc.2018.09.008){target="_blank"}, 27, 82-87.
 :::
 
 ### [Preprints]{.smallcaps}
