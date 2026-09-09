@@ -1,0 +1,1287 @@
+# data/articles.yml — source of truth for the skill tree.
+# Bibliographic fields are extracted from the website CV by R/extract_cv.R and are OVERWRITTEN on
+# every rerun. Judgement fields are Peter's and are preserved:
+#   areas.biosocial / .criminology / .responders (0-3 each; they set the article's direction from the
+#   origin, so 3/0/0 sits on its axis and 2/2/0 between two axes; the year sets the ring),
+#   role (lead | co-lead | contributing), builds_on (ids of lineage nodes), tier (unused for now),
+#   featured (false = muted tier),
+#   contribution.* (collapsed CRediT, 0-3 each), effort (1-5), effort_note, blurb, sticker.
+# First-run areas and role values are GUESSES from titles and author position — review them.
+# Last extracted 2026-09-09 12:20 from tanksley_cv.qmd
+
+- id: tanksley_2026_correctional
+  title: 'Correctional officer mortality in the United States, 2020–2023: Evidence
+    from the National Occupational Mortality Surveillance program'
+  year: 2026
+  venue: American Journal of Public Health
+  doi: ~
+  url: ~
+  citation: in press
+  cv_number: 28
+  authors:
+    - Peter T. Tanksley
+    - Matthew W. Logan
+    - J.C. Barnes
+  authors_n: 3
+  author_position: 1
+  status: in_press
+  role: lead
+  areas:
+    biosocial: 0
+    criminology: 1
+    responders: 3
+  builds_on:
+    - tanksley_2026_clarifying
+    - tanksley_2025_mortality
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 3
+  effort: 4
+  effort_note: ~
+  blurb: After the publication of our paper on law enforcement officer mortality,
+    JC and I collaborated with Matt Logan (Texas State University) to run it back
+    with a new emphasis on correctional officers, using the same NOMS data.
+  sticker: ~
+- id: schwaba_2026_robust
+  title: Robust inference and correlates from genetic associations with personality
+  year: 2026
+  venue: Nature
+  doi: 10.1038/s41586-026-10992-9
+  url: ~
+  citation: online first
+  cv_number: 27
+  authors:
+    - Ted Schwaba
+    - Margaret L. Clapp Sullivan
+    - Wonuola A. Akingbuwa
+    - Kerli Ilves
+    - Peter T. Tanksley
+  authors_n: ~
+  author_position: 5
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 3
+    analysis: 3
+    methods: 0
+    writing: 0
+    supervision: 0
+  effort: 2
+  effort_note: I was responsible for the prediction analyses in the Add Health data.
+  blurb: 'This was the largest genome-wide association study (GWAS) of the Big Five
+    personality traits EVER. The first and second authors, Ted and Maggie, were wonderful
+    to work with. Final result: Nature.'
+  sticker: ~
+- id: mcallister_2026_inflammation
+  title: 'Inflammation on the Frontlines: Linking Salivary and Blood Biomarkers to
+    Cardiometabolic Health and Physical Performance Parameters in Firefighters'
+  year: 2026
+  venue: Journal of Occupational and Environmental Medicine
+  doi: 10.1097/JOM.0000000000003792
+  url: ~
+  citation: online first
+  cv_number: 26
+  authors:
+    - Matthew J. McAllister
+    - Peter T. Tanksley
+    - M. Hunter Martaindale
+    - Ashlyn DeArman
+    - Milena Samora
+    - Steven E. Martin
+    - Drew E. Gonzalez
+  authors_n: 7
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 1
+    criminology: 0
+    responders: 3
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 1
+    supervision: 1
+  effort: 3
+  effort_note: ~
+  blurb: I orchestrated and carried out the lead authors’ desired analytic approach
+    using data on firefighter health, fitness, and biomarkers. I did the R stuff;
+    they wrote up the study.
+  sticker: ~
+- id: eleuterio-da-rocha_2026_striking
+  title: Striking or Grappling? Comparing Public and Officers’ Perceptions of Police
+    Use of Force
+  year: 2026
+  venue: Journal of Criminal Justice
+  doi: 10.1016/j.jcrimjus.2026.102601
+  url: ~
+  citation: 103, 102601
+  cv_number: 25
+  authors:
+    - Joe Eleuterio-da-Rocha
+    - Peter T. Tanksley
+    - M. Hunter Martaindale
+    - Jack Johncox
+    - J. Pete Blair
+  authors_n: 5
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 0
+    responders: 3
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 1
+    supervision: 1
+  effort: 3
+  effort_note: ~
+  blurb: 'As a BJJ practitioner, I had to be part of this project when I heard it
+    was coming down the pike. We partnered with Austin PD to film video vignettes,
+    which we then used to study perceptions of police use of force in two samples—one
+    law enforcement, one general population. Result: both groups found grappling more
+    appropriate than striking… but for different reasons.'
+  sticker: ~
+- id: wooldredge_2026_upstream
+  title: Upstream and downstream racial disparities in prison rule violation processes
+  year: 2026
+  venue: Journal of Research in Crime & Delinquency
+  doi: 10.1177/00224278251411905
+  url: ~
+  citation: 63(2), 242–276
+  cv_number: 24
+  authors:
+    - John Wooldredge
+    - Joshua C. Cochran
+    - Peter T. Tanksley
+  authors_n: 3
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 3
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 3
+    analysis: 0
+    methods: 0
+    writing: 1
+    supervision: 0
+  effort: 1
+  effort_note: ~
+  blurb: Back in graduate school (before I knew about R or the tidyverse), I was handed
+    a ridiculously large, and dirty, prison dataset to clean. It took well over a
+    year of working at it by hand to flag string entries for the variables of interest.
+    Years later, my prof reached out with an idea to finally use it. This project
+    is the result.
+  sticker: ~
+- id: tanksley_2026_clarifying
+  title: 'Clarifying methods and interpretations in law enforcement mortality surveillance:
+    Response to Kamal'
+  year: 2026
+  venue: The Lancet Regional Health - Americas
+  doi: 10.1016/j.lana.2025.101330
+  url: ~
+  citation: '53'
+  cv_number: 23
+  authors:
+    - Peter T. Tanksley
+    - J.C. Barnes
+    - J. Pete Blair
+    - M. Hunter Martaindale
+  authors_n: 4
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 0
+    criminology: 0
+    responders: 3
+  builds_on: tanksley_2025_mortality
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 3
+  effort: 5
+  effort_note: ~
+  blurb: About a week after publishing the piece on law enforcement officer mortality,
+    we received a comment with several methodological critiques. Most simply reiterated
+    what we ourselves had written in the original article’s limitations section, but
+    one was an important note encouraging us to think about within-occupation comparisons,
+    not just between-occupation ones (i.e., LEOs vs. the general public). This response
+    acknowledged that useful tip and presented the results in that format.
+  sticker: ~
+- id: martaindale_2026_public
+  title: 'Public opinion and the immediate entry dilemma: A factorial survey experiment
+    on active shooter response'
+  year: 2026
+  venue: Journal of Criminal Justice
+  doi: 10.1016/j.jcrimjus.2025.102578
+  url: ~
+  citation: 102, 102578
+  cv_number: 22
+  authors:
+    - M. Hunter Martaindale
+    - Peter T. Tanksley
+  authors_n: 2
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 0
+    responders: 2
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 2
+    analysis: 3
+    methods: 2
+    writing: 2
+    supervision: 2
+  effort: 3
+  effort_note: ~
+  blurb: This was a follow-on to a project Hunter had already published on law enforcement
+    opinion regarding immediate entry. It pushed those ideas out into the sphere of
+    public opinion, drawing on two samples to probe how the public perceives immediate-entry
+    decisions by police, and where and when they judge them to be correct. I was brought
+    on to help with the analysis, but I managed to slip in some cool plots as well.
+  sticker: ~
+- id: tanksley_2025_mortality
+  title: 'Mortality among law enforcement officers in the United States: A population-wide
+    analysis of the National Occupational Mortality Surveillance data, 2020-2023'
+  year: 2025
+  venue: The Lancet Regional Health - Americas
+  doi: 10.1016/j.lana.2025.101270
+  url: ~
+  citation: 52, 101270
+  cv_number: 21
+  authors:
+    - Peter T. Tanksley
+    - J.C. Barnes
+    - J. Pete Blair
+    - M. Hunter Martaindale
+  authors_n: 4
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 0
+    criminology: 0
+    responders: 3
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 3
+  effort: 5
+  effort_note: ~
+  blurb: After starting at ALERRT, I got interested in officer health and wellness.
+    But the fundamental question of “what does their mortality profile look like?”
+    eluded a straightforward answer with the research on hand. After finding the NOMS
+    data, I knew I had to work on a project that would give the most definitive answer
+    to that question possible. I assembled a merry band of collaborators, and the
+    rest is history.
+  sticker: ~
+- id: blair_2025_we
+  title: To what are we inferring? The widespread misuse of inferential testing in
+    the most cited criminology and criminal justice journals
+  year: 2025
+  venue: American Journal of Criminal Justice
+  doi: 10.1007/s12103-025-09845-4
+  url: ~
+  citation: 51, 405–426
+  cv_number: 20
+  authors:
+    - Pete J. Blair
+    - Peter T. Tanksley
+    - Emily D. Spivey
+    - M. Hunter Martaindale
+  authors_n: 4
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 3
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 2
+    analysis: 3
+    methods: 1
+    writing: 2
+    supervision: 2
+  effort: 3
+  effort_note: ~
+  blurb: This project was Pete Blair’s brainchild. After several unsuccessful attempts
+    to get it published (something to do with the abnormally high level of snarkiness
+    in the prose), I was offered the chance to come on board and push it over the
+    finish line. A cool Sankey plot, an extensive new discussion section on EFA/CDA,
+    and a newly lowered snark level later, we had a winner.
+  sticker: ~
+- id: blair_2025_active
+  title: 'Active attacks with motor vehicles: A short report and case study of the
+    2025 New Year’s Day attack in New Orleans, LA'
+  year: 2025
+  venue: American Journal of Criminal Justice
+  doi: 10.1007/s12103-025-09806-x
+  url: ~
+  citation: 50, 1067–1074
+  cv_number: 19
+  authors:
+    - Pete J. Blair
+    - M. Hunter Martaindale
+    - Peter T. Tanksley
+    - Jack D. Johncox
+  authors_n: 4
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 0
+    responders: 3
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 2
+    supervision: 2
+  effort: 3
+  effort_note: The figure from this project is one of my favs.
+  blurb: In the early hours of New Year’s Day, 2025, a man drove a truck at high speed
+    into a crowd of revelers on Bourbon Street in New Orleans, LA. In the following
+    weeks, we put together a brief report covering what we knew about such vehicle-based
+    active attacks, using data from ActiveAttackData.org. One standout characteristic
+    of these attacks was the consistently high number of casualties relative to other
+    types (e.g., knife, handgun, rifle).
+  sticker: ~
+- id: desteiguer_2025_stability
+  title: Stability of aging- and cognition-related methylation profile scores across
+    two waves in Children and Adolescents
+  year: 2025
+  venue: Child Development
+  doi: 10.1111/cdev.14239
+  url: ~
+  citation: 96 (3), 1189-1206
+  cv_number: 18
+  authors:
+    - Abby J. deSteiguer
+    - Laurel A.S. Raffington
+    - Aditi Sabhlok
+    - Peter T. Tanksley
+    - Elliot M. Tucker‐Drob
+    - K. Paige Harden
+  authors_n: 6
+  author_position: 4
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on:
+    - raffington_2023_associations
+    - raffington_2022_socially
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 1
+    analysis: 2
+    methods: 0
+    writing: 1
+    supervision: 1
+  effort: 2
+  effort_note: ~
+  blurb: A very talented graduate student from my time in the Harden Lab (UT) put
+    together this project examining the stability of DNA methylation over time. I
+    helped with some data curation and visualization, but this was all Abby.
+  sticker: ~
+- id: gonzalez_2025_relationships
+  title: Relationships between physiological stress biomarkers and cardiovascular
+    disease risk factors among career firefighters
+  year: 2025
+  venue: Journal of Occupational and Environmental Medicine
+  doi: 10.1097/JOM.0000000000003389
+  url: ~
+  citation: 67 (7), 535-541
+  cv_number: 17
+  authors:
+    - Drew E. Gonzalez
+    - Macilynn E. Coles
+    - Peter T. Tanksley
+    - M. Hunter Martaindale
+    - Steven E. Martin
+    - Matthew J. McAllister
+  authors_n: 6
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 1
+    criminology: 0
+    responders: 3
+  builds_on: []
+  tier: ~
+  featured: false
+  contribution:
+    conceptualization: 1
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 1
+    supervision: 0
+  effort: 3
+  effort_note: ~
+  blurb: I orchestrated and carried out the lead authors’ desired analytic approach
+    using data on firefighter health, fitness, and biomarkers. I did the R stuff;
+    they wrote up the study.
+  sticker: ~
+- id: mcallister_2025_markers
+  title: Markers of fitness, stress, and cardiometabolic disease risk among law enforcement
+    officers
+  year: 2025
+  venue: Journal of Occupational and Environmental Medicine
+  doi: 10.1097/JOM.0000000000003357
+  url: ~
+  citation: 67 (6), 437-444
+  cv_number: 16
+  authors:
+    - Matthew J. McAllister
+    - Caitlin Dodge
+    - Peter T. Tanksley
+    - M. Hunter Martaindale
+    - Steven E. Martin
+    - Drew E. Gonzalez
+  authors_n: 6
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 1
+    criminology: 0
+    responders: 3
+  builds_on: gonzalez_2025_relationships
+  tier: ~
+  featured: false
+  contribution:
+    conceptualization: 1
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 1
+    supervision: 0
+  effort: 3
+  effort_note: ~
+  blurb: I orchestrated and carried out the lead authors’ desired analytic approach
+    using data on police officer health, fitness, and biomarkers. I did the R stuff;
+    they wrote up the study.
+  sticker: ~
+- id: tanksley_2024_polygenic
+  title: Do polygenic indices capture ‘direct’ effects on child externalizing behavior?
+    Within-family analyses in two longitudinal birth cohorts
+  year: 2024
+  venue: Clinical Psychological Science
+  doi: 10.1177/21677026241260260
+  url: ~
+  citation: 13 (2), 316-331
+  cv_number: 15
+  authors:
+    - Peter T. Tanksley
+    - Sarah J. Brislin
+    - Jasmin Wertz
+    - Ronald de Vlaming
+    - Natasia S. Courchesne-Krak
+    - Travis T. Mallard
+    - Laurel A. S. Raffington
+    - Richard Karlsson Linner
+    - Philipp Koellinger
+    - Abraham A. Palmer
+    - Sandra Sanchez-Roige
+    - Irwin Waldman
+    - Danielle Dick
+    - Terrie E. Moffitt
+    - Avshalom Caspi
+    - K. Paige Harden
+  authors_n: 16
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 3
+    criminology: 1
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 2
+  effort: 5
+  effort_note: I did all the things. Paige helped.
+  blurb: While at the Harden Lab (UT), I orchestrated a project known to my collaborators
+    as the EXIT (EXternalizing and Intergenerational Transmission) Project. It was
+    slow to get going, but it developed into a very interesting analysis of the direct
+    vs. indirect effects (i.e., the intergenerational part) of externalizing polygenic
+    indices. Two cohorts, two types of genetic effects, and a beautiful 2×2 ggplot2
+    legend were the result… there was an academic paper too, I guess.
+  sticker: ~
+- id: barnes_2024_risk
+  title: Using Risk of Crime Detection to Study Change in Mechanisms of Decision-Making
+  year: 2024
+  venue: Journal of Personality & Social Psychology
+  doi: ~
+  url: https://psycnet.apa.org/manuscript/2024-76223-006.pdf
+  citation: 126 (3), 477–491
+  cv_number: 14
+  authors:
+    - J.C. Barnes
+    - Terrie E. Moffitt
+    - Peter T. Tanksley
+    - Shahin Tasharrofi
+    - Richie Poulton
+    - Avshalom Caspi
+  authors_n: 6
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 0
+    criminology: 3
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 1
+    data: 0
+    analysis: 0
+    methods: 1
+    writing: 1
+    supervision: 0
+  effort: 1
+  effort_note: ~
+  blurb: JC had a super interesting idea about perceived arrest risk vs. actual risk.
+    He wrote the paper using data from the Dunedin Longitudinal Study. I just filled
+    in interesting literature-related tidbits about evolutionary psychology.
+  sticker: ~
+- id: willems_2024_self
+  title: Self-control is associated with health-relevant disparities in buccal DNA-methylation
+    measures of biological aging in older adults
+  year: 2024
+  venue: Clinical Epigenetics
+  doi: 10.1186/s13148-024-01637-7
+  url: ~
+  citation: 16 (22)
+  cv_number: 13
+  authors:
+    - Yayouk E. Willems
+    - Abby deSteiguer
+    - Peter T. Tanksley
+    - Liza Vinnik
+    - Deniz Främke
+    - Aysu Okbay
+    - David Richter
+    - Gert G. Wagner
+    - Ralph Hertwig
+    - Philipp D. Koellinger
+    - Elliot M. Tucker-Drob
+    - K. Paige Harden
+    - Laurel A.S. Raffington
+  authors_n: 13
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 2
+    analysis: 0
+    methods: 1
+    writing: 0
+    supervision: 0
+  effort: 2
+  effort_note: ~
+  blurb: Yayouk, then a postdoc working with Laurel (a former fellow postdoc from
+    the Harden Lab, UT), put together this great analysis of self-control, DNA methylation,
+    and health outcomes in a German cohort and the Texas Twin Project (TTP). I mostly
+    just helped generate the polygenic indices they needed in the TTP.
+  sticker: ~
+- id: tanksley_2023_history
+  title: 'History of incarceration and age-related neurodegeneration: Testing models
+    of genetic and environmental risks in a longitudinal panel study of older adults'
+  year: 2023
+  venue: PLoS ONE
+  doi: 10.1371/journal.pone.0288303
+  url: ~
+  citation: 18 (12), e0288303
+  cv_number: 12
+  authors:
+    - Peter T. Tanksley
+    - Matthew W. Logan
+    - J.C. Barnes
+  authors_n: 3
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 2
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 3
+  effort: 4
+  effort_note: ~
+  blurb: This project started out as an idea for a special issue on evolutionary psychology.
+    After selling a few friends on the idea, it morphed until it was no longer appropriate
+    for the venue. We pushed ahead anyway, and it ended up being a great piece on
+    incarceration, genes, and neurodegeneration later in life.
+  sticker: ~
+- id: williams_2023_guidelines
+  title: Guidelines for evaluating the comparability of down-sampled GWAS summary
+    statistics
+  year: 2023
+  venue: Behavior Genetics
+  doi: 10.1007/s10519-023-10152-z
+  url: ~
+  citation: 53, 404–415
+  cv_number: 11
+  authors:
+    - Camille M. Williams
+    - Holly Poore
+    - Peter T. Tanksley
+    - Hyeokmoon Kweon
+    - Natasia S. Courchesne-Krak
+    - Diego Londono-Correa
+    - Travis T. Mallard
+    - Peter Barr
+    - Philipp D. Koellinger
+    - Irwin D. Waldman
+    - Sandra Sanchez-Roige
+    - K. Paige Harden
+    - Abraham A Palmer
+    - Danielle M. Dick
+    - Richard Karlsson Linnér
+  authors_n: 15
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 1
+    analysis: 3
+    methods: 2
+    writing: 2
+    supervision: 1
+  effort: 4
+  effort_note: ~
+  blurb: During my time with the Harden Lab (UT), I was also an active member of the
+    Externalizing Consortium. One problem with the original publication was that it
+    used restricted 23andMe data, making data sharing practically impossible-ish.
+    We fixed that by removing the restricted data, but then we needed to benchmark
+    its performance. Thus, this paper.
+  sticker: ~
+- id: raffington_2023_associations
+  title: Associations of DNA-methylation measures of biological aging with social
+    disparities in child and adolescent mental health
+  year: 2023
+  venue: Clinical Psychological Science
+  doi: 10.1177/21677026231186802
+  url: ~
+  citation: 34 (2), 170–185
+  cv_number: 10
+  authors:
+    - Laurel A.S. Raffington
+    - Peter T. Tanksley
+    - Liza Vinnik
+    - Aditi Sabhlok
+    - Megan Patterson
+    - Travis T. Mallard
+    - Margherita Malanchini
+    - Ziada Ayorech
+    - Elliot M. Tucker-Drob
+    - K. Paige Harden
+  authors_n: 10
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: raffington_2022_socially
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 0
+    analysis: 3
+    methods: 1
+    writing: 1
+    supervision: 2
+  effort: 3
+  effort_note: ~
+  blurb: 'Laurel, a fellow postdoc at the Harden Lab, worked like mad to get two parallel
+    analyses finished before going on maternity leave: same DNA-methylation measures,
+    same kids, two outcomes. This is the mental-health half, which landed in Clinical
+    Psychological Science. While she was on leave, I was tasked with getting both
+    manuscripts polished up and submitted for publication. With a bit of editing and
+    shiny new data visualizations, they sailed through. Laurel is a badass.'
+  sticker: ~
+- id: wertz_2023_genetic
+  title: 'Genetic associations with parental investment from conception to wealth
+    inheritance: 30,000 parents in six cohorts'
+  year: 2023
+  venue: Nature Human Behavior
+  doi: 10.1038/s41562-023-01618-5
+  url: ~
+  citation: 7, 1388–1401
+  cv_number: 9
+  authors:
+    - Jasmin Wertz
+    - Terrie E. Moffitt
+    - Louise Arseneault
+    - J.C. Barnes
+    - Michel Boivin
+    - David L. Corcoran
+    - Andrea Danese
+    - Robert J. Hancox
+    - HonaLee Harrington
+    - Renate M. Houts
+    - Stephanie Langevin
+    - Hexuan Liu
+    - Richie Poulton
+    - Karen Sugden
+    - Peter T. Tanksley
+    - Benjamin S. Williams
+    - Avshalom Caspi
+  authors_n: 17
+  author_position: 15
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 1
+    data: 3
+    analysis: 3
+    methods: 2
+    writing: 1
+    supervision: 0
+  effort: 4
+  effort_note: ~
+  blurb: We called this the “genetic handoff” project. It was a HUGE multi-cohort
+    effort headed up by Jasmin Wertz, then a postdoc in the Moffitt and Caspi (Temi
+    and Av) Lab. The basic idea was that genes for educational attainment (à la the
+    EA3 polygenic index) would predict all kinds of parenting behaviors across the
+    entire life course. The contribution from JC, Hexuan (both UC), and me was to
+    analyze the two participating cohorts we had data for.
+  sticker: ~
+- id: langevin_2022_life
+  title: Life-course persistent antisocial behavior and accelerated biological aging
+    in a longitudinal birth cohort
+  year: 2022
+  venue: The International Journal of Environmental Research and Public Health
+  doi: 10.3390/ijerph192114402
+  url: ~
+  citation: 19 (21), 14402
+  cv_number: 8
+  authors:
+    - Stephanie Langevin
+    - Avshalom Caspi
+    - J.C. Barnes
+    - Grace Brennan
+    - Richie Poulton
+    - Suzanne C. Purdy
+    - Sandhya Ramrakha
+    - Peter T. Tanksley
+    - Peter R. Thorne
+    - Graham Wilson
+    - Terrie E. Moffitt
+  authors_n: 11
+  author_position: 8
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 3
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 0
+    analysis: 0
+    methods: 0
+    writing: 1
+    supervision: 0
+  effort: 1
+  effort_note: ~
+  blurb: This project was developed and executed by Stephanie, a postdoc working with
+    Temi and Av (the Moffitt and Caspi Lab). My involvement was light, mostly critical
+    reviews prior to submission. My dissertation work had been closely related to
+    the topics covered in the paper, so the team was nice enough to ask me along for
+    the ride.
+  sticker: ~
+- id: raffington_2022_socially
+  title: Socially stratified epigenetic profiles are associated with cognitive functioning
+    in children and adolescents
+  year: 2022
+  venue: Psychological Science
+  doi: 10.1177/09567976221122760
+  url: ~
+  citation: 34 (2), 170-185
+  cv_number: 7
+  authors:
+    - Laurel A.S. Raffington
+    - Peter T. Tanksley
+    - Aditi Sabhlok
+    - Liza Vinnik
+    - Travis T. Mallard
+    - Lucy King
+    - Bridget Goosby
+    - K. Paige Harden
+    - Elliot M. Tucker-Drob
+  authors_n: 9
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 0
+    analysis: 3
+    methods: 1
+    writing: 1
+    supervision: 2
+  effort: 3
+  effort_note: ~
+  blurb: 'Laurel, a fellow postdoc at the Harden Lab, worked like mad to get two parallel
+    analyses finished before going on maternity leave: same DNA-methylation measures,
+    same kids, two outcomes. This is the cognitive-functioning half, which landed
+    in Psychological Science. While she was on leave, I was tasked with getting both
+    manuscripts polished up and submitted for publication. With a bit of editing and
+    shiny new data visualizations, they sailed through. Laurel is a badass.'
+  sticker: ~
+- id: liu_2022_incarceration
+  title: Incarceration, polygenic risk, and depressive symptoms among males in late
+    adulthood
+  year: 2022
+  venue: Social Science Research
+  doi: 10.1016/j.ssresearch.2021.102683
+  url: ~
+  citation: 104, 102683
+  cv_number: 6
+  authors:
+    - Hexuan Liu
+    - Peter T. Tanksley
+    - Ryan T. Motz
+    - Rachel M. Kail
+    - J.C. Barnes
+  authors_n: 5
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 2
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 2
+    supervision: 0
+  effort: 4
+  effort_note: ~
+  blurb: 'This piece was a CASTLE Lab (UC) classic. Hexuan and I proposed the same
+    idea in a lab meeting (he had thought about it more; I just happened to have the
+    same thought and started blabbing about it): incarceration, polygenic risk, depression.
+    Classic GxE. He analyzed the HRS, I analyzed the WLS. It worked out great.'
+  sticker: ~
+- id: liu_2021_adolescent
+  title: 'Adolescent criminal justice involvement, educational attainment, and genetic
+    inheritance: Testing an integrative model using the Add Health data'
+  year: 2021
+  venue: Journal of Developmental & Life-Course Criminology
+  doi: 10.1007/s40865-021-00166-8
+  url: ~
+  citation: 7 (2), 195-228
+  cv_number: 5
+  authors:
+    - Hexuan Liu
+    - Ryan T. Motz
+    - Peter T. Tanksley
+    - J.C. Barnes
+    - Kathleen Mullan Harris
+  authors_n: 5
+  author_position: 3
+  status: published
+  role: contributing
+  areas:
+    biosocial: 2
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 1
+    data: 0
+    analysis: 0
+    methods: 1
+    writing: 2
+    supervision: 0
+  effort: 2
+  effort_note: ~
+  blurb: Hexuan (UC) led the CASTLE Lab in another great project, looking at the potential
+    deadening effect of adolescent incarceration on educational attainment using the
+    EA3 polygenic index.
+  sticker: ~
+- id: tanksley_2020_identifying
+  title: 'Identifying pathways to polyvictimization: Evidence from a longitudinal
+    cohort study of twins from the United Kingdom'
+  year: 2020
+  venue: Journal of Experimental Criminology
+  doi: 10.1007/s11292-020-09422-1
+  url: ~
+  citation: 16 (3), 431-461
+  cv_number: 4
+  authors:
+    - Peter T. Tanksley
+    - J.C. Barnes
+    - Brian Boutwell
+    - Avshalom Caspi
+    - Terrie E. Moffitt
+  authors_n: 5
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 1
+    criminology: 3
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 2
+  effort: 5
+  effort_note: ~
+  blurb: 'Shortly after starting to work with JC (UC), I got the opportunity to lead
+    my first big analytic academic project. We partnered with Temi and Av, using their
+    E-Risk study data to examine the genetic contribution to multiple kinds of cognitive
+    functions and psychopathologies. We wanted to know how adjusting for that genetic
+    contribution changed the association between these mental processes and polyvictimization.
+    Long story short: self-control, even after adjusting for genetic contributions,
+    was the best predictor of future polyvictimization.'
+  sticker: ~
+- id: barnes_2019_propensity
+  title: 'The propensity for aggressive behavior and lifetime incarceration risk:
+    A test for gene-environment interaction (G×E) using whole-genome data'
+  year: 2019
+  venue: Aggression & Violent Behavior
+  doi: 10.1016/j.avb.2019.07.002
+  url: ~
+  citation: 49, 101307
+  cv_number: 3
+  authors:
+    - J.C. Barnes
+    - Hexuan Liu
+    - Ryan T. Motz
+    - Peter T. Tanksley
+    - Rachel M. Kail
+    - Amber L. Beckley
+    - Daniel W. Belsky
+    - Benjamin W. Domingue
+    - Terrie E. Moffitt
+    - Travis C. Pratt
+    - Jasmin Wertz
+  authors_n: 11
+  author_position: 4
+  status: published
+  role: contributing
+  areas:
+    biosocial: 2
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 0
+    analysis: 0
+    methods: 0
+    writing: 1
+    supervision: 0
+  effort: 1
+  effort_note: ~
+  blurb: This project really kicked off the CASTLE Lab at the University of Cincinnati.
+    Ryan Motz (UC) was combing through the HRS codebook and found a reference to past
+    incarceration. Using that, Ryan, JC, and Hexuan put together this study to examine
+    the impact of genetic risk for aggression on lifetime incarceration risk. They
+    brought together a great group of collaborators, and before the project was done
+    they also brought in newly minted lab members, myself included, to help with the
+    final writing and editing.
+  sticker: ~
+- id: tanksley_2019_genome
+  title: The genome-wide study of human social behavior and its application in sociology
+  year: 2019
+  venue: Frontiers of Sociology
+  doi: 10.3389/fsoc.2019.00053
+  url: ~
+  citation: 4 (53), 1-10
+  cv_number: 2
+  authors:
+    - Peter T. Tanksley
+    - Ryan T. Motz
+    - Rachel M. Kail
+    - J.C. Barnes
+    - Hexuan Liu
+  authors_n: 5
+  author_position: 1
+  status: published
+  role: lead
+  areas:
+    biosocial: 3
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 3
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 3
+    supervision: 3
+  effort: 4
+  effort_note: ~
+  blurb: This was my first project to lead, ever. And while it didn’t include an analytic
+    component, it definitely pushed me to develop both my ability and my awareness
+    when it came to academic writing. I really enjoyed working on it, even though
+    I tended to overthink it at times. It was a lot of fun to work on with the group
+    that became the CASTLE Lab (UC).
+  sticker: ~
+- id: motz_2019_every
+  title: 'Every contact leaves a trace: Contact with the criminal justice system,
+    life outcomes, and the intersection with genetics'
+  year: 2019
+  venue: Current Opinion in Psychology
+  doi: 10.1016/j.copsyc.2018.09.008
+  url: ~
+  citation: 27, 82-87
+  cv_number: 1
+  authors:
+    - Ryan M. Motz
+    - Peter T. Tanksley
+    - Hexuan Liu
+    - Tesfaye B. Mersha
+    - J.C. Barnes
+  authors_n: 5
+  author_position: 2
+  status: published
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 2
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 3
+    analysis: 3
+    methods: 3
+    writing: 2
+    supervision: 0
+  effort: 3
+  effort_note: ~
+  blurb: 'My first academic article, ever. I was not the lead author, but I contributed
+    significantly to the writing and conceptualization of the piece. The part I’ll
+    remember more than anything else is that the hook was mine: I used Locard’s exchange
+    principle to describe how criminal justice contact always leaves some kind of
+    mark on the people who experience it. And genetic risk can exaggerate that mark.'
+  sticker: ~
+- id: fraemke_2026_developmental
+  title: Developmental correlates of epigenetic and polygenic indices of cognition
+    and educational attainment from birth to young adulthood
+  year: 2026
+  venue: BioRxiv
+  doi: 10.64898/2026.04.01.715866
+  url: ~
+  citation: ~
+  cv_number: ~
+  authors:
+    - Deniz Fraemke
+    - Lena Paulus
+    - Isabel K. Schuurmans
+    - J.-H. Walter
+    - Darina Czamara
+    - Alicia M. Schowe
+    - Abby J. deSteiguer
+    - Peter T. Tanksley
+  authors_n: ~
+  author_position: 8
+  status: preprint
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 0
+    data: 2
+    analysis: 0
+    methods: 1
+    writing: 1
+    supervision: 0
+  effort: 1
+  effort_note: ~
+  blurb: Preprint
+  sticker: ~
+- id: williams_2026_genomic
+  title: Genomic insights into substance use and disinhibitory disorders
+  year: 2026
+  venue: MedRxiv
+  doi: 10.64898/2026.02.09.26344198
+  url: ~
+  citation: ~
+  cv_number: ~
+  authors:
+    - Camille M. Williams
+    - Holly E. Poore
+    - Diego Londono-Correa
+    - Yuchen Ning
+    - Natasia S. Courchesne-Krak
+    - Maia Choi
+    - Justin D. Tubbs
+    - Matthew Rosenblatt
+    - Peter T. Tanksley
+  authors_n: ~
+  author_position: 9
+  status: preprint
+  role: contributing
+  areas:
+    biosocial: 3
+    criminology: 0
+    responders: 0
+  builds_on: []
+  tier: ~
+  featured: true
+  contribution:
+    conceptualization: 2
+    data: 2
+    analysis: 1
+    methods: 2
+    writing: 1
+    supervision: 2
+  effort: 4
+  effort_note: ~
+  blurb: Preprint
+  sticker: ~
+

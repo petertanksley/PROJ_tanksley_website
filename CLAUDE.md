@@ -59,6 +59,34 @@ Exception: the CV (`2_cv/`) is formal and stays formal. Publication titles there
   `_hexband.qmd` (append new names to `stickers`, rerun). Refs in `4_stickers/refs/` are
   gitignored personal photos. Full lessons: `logs/2026-09-01_sticker-generation.md`.
 
+## Skill tree (`skilltree.qmd`, `5_skilltree/`)
+
+- **R thinks, JS draws.** Data, validation and geometry live in `5_skilltree/R/`; `www/skilltree.js`
+  only puts SVG on the page from `www/tree.json`. `5_skilltree/data/articles.yml` is the source of
+  truth; `extract_cv.R` refreshes its bibliographic fields from the CV and never touches the
+  judgement fields (areas, role, contribution, effort, blurb, builds_on, featured, sticker). Peter
+  edits those in the Shiny app (`5_skilltree/tools/rate_articles/`), which auto-saves.
+- `www/tree.json` and `www/hex/sm/` are committed build outputs: rerun `build_tree.R` after any
+  YAML edit and commit the result. They are declared under `resources` in `_quarto.yml` because
+  Quarto cannot see assets referenced only from JS/JSON.
+- Layout: hexagonal year rings (2019 on ring 2, ring 1 empty, Peter's `puzzled` sticker at the
+  origin) with three area axes, biosocial 240° / criminology 120° / first responders 0°; direction
+  is the vector sum of the 0–3 area ratings; each article takes the free cell on its ring nearest
+  its angle, purest first. Lineage: neighbours get a weld across the shared border above the tiles,
+  longer links a curve beneath.
+- Interaction: **hover highlights, click flips.** Nothing geometric changes on hover (a hover
+  transform thrashes enter/leave at the hex edges). Click flips once and opens the detail panel;
+  `#id` deep links. Never rotate a sticker. The resting dim is a filled `hex-shade` path, never a
+  CSS `filter` on an SVG `<image>` (GPU Chrome and Safari drop the image). Verify interaction in a
+  real browser, not only headless.
+- Muted tier (`featured: false`) is visual only. Nothing on the page explains why a node is muted;
+  legend wording is "contributing author". Blurbs for muted papers get the same care as any other.
+- Stickers per article go through the `4_stickers/` pipeline unchanged; until one exists a node
+  shows `blank_dark.png`, which `build_tree.R` cuts from `blank.png`'s alpha.
+- Styles are the `.skilltree*` block at the end of `theme.scss`: a self-contained dark panel with
+  `--st-*` tokens. Area colours come from `AREA_COL` in `build_tree.R` via `tree.json`; do not
+  hardcode them in the qmd or SCSS.
+
 ## Build gotchas
 
 - CV publication entries must be fenced divs (`::: {.pub-item}`), never raw single-line
@@ -69,3 +97,7 @@ Exception: the CV (`2_cv/`) is formal and stays formal. Publication titles there
   quirk, not a layout bug.
 - CI (`.github/workflows/publish.yml`) renders on push to `main`, including the pagedjs CV
   PDF, using the runner's preinstalled Chrome.
+- A `position: fixed` overlay written inside page content can never rise above the fixed-top navbar
+  (z 1030): Quarto's content column is its own stacking context (`z-index: 998; opacity: .999`), so
+  z-index inside it is capped. Portal the element to `<body>` from JS instead (the skill tree does
+  this for its panel and tooltip).

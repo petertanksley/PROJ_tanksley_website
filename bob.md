@@ -61,3 +61,4 @@ sync: github
   divs stay unclosed in pandoc and truncate the TOC (same log)
 - Conventions (voice, content rules, feed, stickers, gotchas): `CLAUDE.md` (added 2026-09-05)
 - History: `logs/` (prune record: `logs/2026-09-02_bob-prune.md`)
+- Skill tree integrated 2026-09-09 (Research ▸ Skill tree; generator in `5_skilltree/`, PROJ_skill_tree repo archived) — see logs/skilltree/

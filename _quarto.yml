@@ -9,6 +9,12 @@ project:
     - "!bob.md"
     - "!CLAUDE.md"
     - "!logs/"
+    - "!5_skilltree/"
+  # tree.json and the downscaled stickers are referenced from JS/JSON, not from the page, so Quarto
+  # cannot discover them; declare them
+  resources:
+    - "www/tree.json"
+    - "www/hex/sm/**"
 
 website:
   title: "Peter T. Tanksley"
@@ -20,11 +26,15 @@ website:
     pinned: false
     left:
       - text: Research
-        href: research.qmd
-      - text: CV
-        href: 2_cv/tanksley_cv.qmd
-      - text: Projects
-        href: projects.qmd
+        menu:
+          - text: Research
+            href: research.qmd
+          - text: Skill tree
+            href: skilltree.qmd
+          - text: Projects
+            href: projects.qmd
+          - text: CV
+            href: 2_cv/tanksley_cv.qmd
       - text: News
         href: news.qmd
       - text: Left-hand Thoughts
