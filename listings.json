@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/news.html",
+    "listing": "/index.html",
     "items": []
   },
   {
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/news.html",
     "items": []
   }
 ]
