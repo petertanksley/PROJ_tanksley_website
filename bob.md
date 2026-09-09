@@ -6,9 +6,9 @@ priority: medium
 path: /Users/PTT2/Documents/GitHub/PROJ_tanksley_website
 deadline: null
 target: Personal academic website with CV, about page, and blog
-effort_remaining: ~0 (monitoring; DOI/volume for AJPH and Nature papers when assigned)
+effort_remaining: ~0 (monitoring; per-article stickers for the skill tree are an optional open-ended side task)
 weekly_commitment: 1h
-last_updated: 2026-09-05
+last_updated: 2026-09-09
 repo: https://github.com/petertanksley/petertanksley.github.io
 blockers: null
 blocking_others: null
@@ -25,20 +25,27 @@ sync: github
 
 ## Start Here Next Session
 
-- Nothing urgent. 2026-09-05 work (stickers, collage, news feed) is live; add news items to
-  `news.yml` as they happen.
-- Check Crossref for volume/pages on the Nature paper before touching the CV.
+- Nothing urgent. Skill tree (Research ▸ Skill tree) and the YAML-generated CV publication list are
+  live as of 2026-09-09; add news items to `news.yml` as they happen.
+- Publications now change in `5_skilltree/data/articles.yml`, never in the CV directly: edit → rate
+  in the Shiny app if new → `Rscript 5_skilltree/R/build_tree.R` + `render_cv_pubs.R` → commit.
+- Check Crossref for volume/pages on the Nature paper (entry 27) before touching the YAML.
 
 ## This Week
 
+- [ ] Optional: per-article hex stickers for the skill tree via `4_stickers/` (28 needed; tree ships on
+  placeholders; Peter deferred 2026-09-07)
 - [ ] Optional: phase stickers beside the matching Research-page sections
+- [ ] Optional: a news item announcing the skill tree
 
 ## Upcoming Milestones
 
-- TBD: add volume/issue/pages to CV entry 27 (Schwaba et al., Nature, doi:10.1038/s41586-026-10992-9)
-  when assigned — check `api.crossref.org/works/<doi>`; none as of 2026-09-02
-- TBD: add DOI (and later volume/pages) to CV entry 28 (Tanksley, Logan, & Barnes, AJPH, in press)
-  on the CV, homepage, and research page; also link the titles once a DOI exists
+- TBD: volume/issue/pages for entry 27 (Schwaba et al., Nature, doi:10.1038/s41586-026-10992-9)
+  when assigned — set `citation:` in `articles.yml` (currently "online first"), rerun `render_cv_pubs.R`;
+  none as of 2026-09-09
+- TBD: DOI (then volume/pages) for entry 28 (Tanksley, Logan, & Barnes, AJPH, in press) — set `doi:`,
+  `status: published`, `citation:` in `articles.yml`; the homepage and research-page `.worklist`
+  blocks are still hand-written and need the same edit
 
 ## Notes
 
@@ -57,9 +64,10 @@ sync: github
 - CV hex band: `4_stickers/hexband.R` → `_hexband.qmd` (included by the CV). New stickers:
   append to `stickers` in the script and rerun. Design notes in
   `logs/2026-09-02_hex-band-and-cv-fixes.md`
-- CV publication entries must be fenced divs (`::: {.pub-item}`), never raw `<div>` — raw
-  divs stay unclosed in pandoc and truncate the TOC (same log)
+- CV publication block is generated (`2_cv/_publications.qmd`, never hand-edited); the fenced-div
+  rule it follows is documented in CLAUDE.md
 - Conventions (voice, content rules, feed, stickers, gotchas): `CLAUDE.md` (added 2026-09-05)
 - History: `logs/` (prune record: `logs/2026-09-02_bob-prune.md`)
 - Skill tree integrated 2026-09-09 (Research ▸ Skill tree; generator in `5_skilltree/`, PROJ_skill_tree repo archived) — see logs/skilltree/
-- CV publications generated from `5_skilltree/data/articles.yml` since 2026-09-09 (`render_cv_pubs.R` → `2_cv/_publications.qmd`); add papers with `add_article.R <DOI>`
+- CV publications generated from `5_skilltree/data/articles.yml` since 2026-09-09 (`render_cv_pubs.R` → `2_cv/_publications.qmd`); add papers with `add_article.R <DOI>` — see logs/skilltree/2026-09-09_cv-from-yaml.md
+- CV PDF: screen-only elements must be hidden with a `.pagedjs_page`-scoped rule in `tanksley_cv.css` (hex band fix 2026-09-09); `quarto render 2_cv/tanksley_cv.qmd --to pdf` to rebuild the PDF locally
