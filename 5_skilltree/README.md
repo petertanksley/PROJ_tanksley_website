@@ -10,8 +10,15 @@ Rscript -e 'shiny::runApp("5_skilltree/tools/rate_articles", launch.browser = TR
 quarto preview                          # skilltree.qmd renders with the rest of the site
 ```
 
-`www/tree.json` and `www/hex/sm/` are **committed** so CI can render without R, like `_hexband.qmd`.
-Adding a paper: add it to the CV, run the extractor, rate it in the app, rebuild, commit.
+```bash
+Rscript 5_skilltree/R/render_cv_pubs.R          # write 2_cv/_publications.qmd — the CV's publication block
+Rscript 5_skilltree/R/add_article.R <DOI>       # CrossRef → new YAML entry (add --dry-run to preview)
+```
+
+`www/tree.json`, `www/hex/sm/` and `2_cv/_publications.qmd` are **committed** so CI can render
+without R, like `_hexband.qmd`. **Adding a paper:** `add_article.R <DOI>` → fix Title Case / middle
+initial in the YAML → rate it in the app → `build_tree.R` + `render_cv_pubs.R` → commit. The
+extractor is now a migration tool only (it reads the generated include).
 
 Conventions live in the repo `CLAUDE.md` (Skill tree section). Plan and history:
 `logs/skilltree/`. Built 2026-09-07/09 in the (now archived) `PROJ_skill_tree` repo.

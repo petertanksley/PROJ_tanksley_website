@@ -216,4 +216,8 @@ ul li {
   margin-bottom: 0;
 }
 
+/* The hex band is screen decoration. The pagedjs PDF is built from a standalone HTML render without
+   the site theme, so nothing hid the band and its images (root-absolute paths, unreachable) came out
+   as broken-image alt text after Teaching. pagedjs wraps content in .pagedjs_page; hide it there. */
+.pagedjs_pages .hexband, .pagedjs_page .hexband { display: none !important; }
 

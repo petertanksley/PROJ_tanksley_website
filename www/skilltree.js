@@ -119,7 +119,8 @@
       const v = (n.areas && n.areas[k]) || 0;
       return `<span><span class="lab">${esc(AREA_LABELS[k] || k)}</span>${[1, 2, 3].map(i => `<i class="${i <= v ? 'on' : ''}"></i>`).join('')}</span>`;
     }).join('') + '</div>';
-    const blurb = n.blurb ? `<p class="sp-blurb">${esc(n.blurb)}</p>` : `<p class="sp-blurb pending">Description to come.</p>`;
+    const blurb = n.status === 'preprint' ? '' :                                   // preprints carry no blurb by design
+                  n.blurb ? `<p class="sp-blurb">${esc(n.blurb)}</p>` : `<p class="sp-blurb pending">Description to come.</p>`;
     let contrib;
     if (n.scored) {
       contrib = '<div class="sp-grid">' + credit.map(k => {

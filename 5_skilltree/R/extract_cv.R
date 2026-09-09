@@ -17,17 +17,19 @@ suppressPackageStartupMessages({
 })
 
 # ---- locate inputs --------------------------------------------------------------------------
-cv_path  <- here("2_cv", "tanksley_cv.qmd")
+# Once the CV includes the generated 2_cv/_publications.qmd, that file IS the publication block and
+# this script is a migration / back-compat tool: parse the include when it exists, else the CV itself.
+pub_include <- here("2_cv", "_publications.qmd")
+cv_path  <- if (file.exists(pub_include)) pub_include else here("2_cv", "tanksley_cv.qmd")
 out_path <- here("5_skilltree", "data", "articles.yml")
 if (!file.exists(cv_path)) stop("CV not found at ", cv_path, " — run from the site repo root")
 
 cv <- readLines(cv_path, warn = FALSE, encoding = "UTF-8")
 
-# ---- slice the Publications section ---------------------------------------------------------
+# ---- slice the Publications section (whole file when reading the include) --------------------
 pub_start <- which(str_detect(cv, "^## \\[Publications\\]"))
 pub_end   <- which(str_detect(cv, "^## \\[Presentations\\]"))
-stopifnot(length(pub_start) == 1, length(pub_end) == 1, pub_end > pub_start)
-pubs <- cv[pub_start:(pub_end - 1)]
+pubs <- if (length(pub_start) == 1 && length(pub_end) == 1 && pub_end > pub_start) cv[pub_start:(pub_end - 1)] else cv
 preprint_hdr <- which(str_detect(pubs, "^### \\[Preprints\\]"))
 
 # ---- helpers --------------------------------------------------------------------------------
@@ -64,6 +66,7 @@ parse_article <- function(line, year) {
   body      <- str_replace(line, "^\\d+\\.\\s+", "")
   parts     <- str_split_fixed(body, "<br>", 2)
   au        <- parse_authors(parts[1])
+  authors_cv <- str_trim(parts[1])                         # verbatim, bold markers and all: the CV prints this
   rest      <- parts[2]
   # title: curly or straight quotes; the CV once had a reversed opening quote, so accept either
   title     <- str_match(rest, "^[“”\"](.+?)[.?!]?[“”\"]")[, 2]
@@ -84,7 +87,8 @@ parse_article <- function(line, year) {
   url <- if (!is.na(href) && is.na(doi)) href else NA_character_
   list(cv_number = cv_number, title = title, year = year, venue = venue, doi = doi, url = url,
        citation = if (nzchar(tail)) tail else NA_character_, status = status,
-       authors = au$authors, authors_n = au$n, author_position = au$position, et_al = au$et_al)
+       authors = au$authors, authors_cv = authors_cv, et_al = au$et_al,
+       authors_n = au$n, author_position = au$position)
 }
 
 # Preprint block: 2–3 lines inside `::: {.cv-indent}`; authors end with a backslash line break.
@@ -92,6 +96,7 @@ parse_preprint <- function(lines) {
   txt   <- str_squish(paste(str_replace(lines, "\\\\$", ""), collapse = " "))
   parts <- str_split_fixed(txt, "(?<=al\\.)\\s+|(?<=\\.)\\s+(?=[“\"])", 2)
   au    <- parse_authors(parts[1])
+  authors_cv <- str_trim(parts[1])
   rest  <- parts[2]
   title <- str_match(rest, "^[“”\"](.+?)[.?!]?[“”\"]")[, 2]
   link  <- str_match(rest, "\\[\\*(.+?)\\*\\]\\((\\S+?)\\)")
@@ -100,7 +105,8 @@ parse_preprint <- function(lines) {
   year  <- as.integer(str_match(doi, "/(\\d{4})\\.")[, 2])   # bio/medRxiv DOIs carry the year
   list(cv_number = NA_integer_, title = title, year = year, venue = link[1, 2], doi = doi,
        url = if (is.na(doi)) href else NA_character_, citation = NA_character_, status = "preprint",
-       authors = au$authors, authors_n = au$n, author_position = au$position, et_al = au$et_al)
+       authors = au$authors, authors_cv = authors_cv, et_al = au$et_al,
+       authors_n = au$n, author_position = au$position)
 }
 
 # ---- walk the section -----------------------------------------------------------------------
@@ -172,7 +178,7 @@ entries <- map(articles, function(a) {
   old <- existing[[key_of(a)]]
   j   <- if (is.null(old)) fresh_judgement(a) else old[JUDGEMENT]
   extracted <- a[c("title", "year", "venue", "doi", "url", "citation", "cv_number",
-                   "authors", "authors_n", "author_position", "status")]
+                   "authors", "authors_cv", "et_al", "authors_n", "author_position", "status")]
   # field order: identity → extracted bibliographic → judgement
   c(list(id = j$id), extracted, j[setdiff(JUDGEMENT, "id")])
 })
@@ -186,8 +192,9 @@ entries <- map2(entries, ids, function(e, id) { e$id <- id; e })
 # ---- write -----------------------------------------------------------------------------------
 header <- c(
   "# data/articles.yml — source of truth for the skill tree.",
-  "# Bibliographic fields are extracted from the website CV by R/extract_cv.R and are OVERWRITTEN on",
-  "# every rerun. Judgement fields are Peter's and are preserved:",
+  "# Bibliographic fields (incl. authors_cv, the verbatim author string the CV prints) were extracted by",
+  "# 5_skilltree/R/extract_cv.R and are OVERWRITTEN on rerun; render_cv_pubs.R prints them back into the",
+  "# CV. Judgement fields are Peter's and are preserved:",
   "#   areas.biosocial / .criminology / .responders (0-3 each; they set the article's direction from the",
   "#   origin, so 3/0/0 sits on its axis and 2/2/0 between two axes; the year sets the ring),",
   "#   role (lead | co-lead | contributing), builds_on (ids of lineage nodes), tier (unused for now),",

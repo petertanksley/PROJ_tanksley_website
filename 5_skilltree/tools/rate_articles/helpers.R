@@ -53,7 +53,7 @@ completeness <- function(e) {
   c(areas        = length(ar) == 3 && sum(ar) > 0,
     contribution = length(co) == 6,
     effort       = !is.null(e$effort),
-    blurb        = !is.null(e$blurb) && nzchar(e$blurb))
+    blurb        = identical(e$status, "preprint") || (!is.null(e$blurb) && nzchar(e$blurb)))   # preprints carry no blurb
 }
 
 short_title <- function(t, n = 60) if (nchar(t) > n) paste0(substr(t, 1, n - 1), "…") else t

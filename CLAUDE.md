@@ -86,17 +86,31 @@ Exception: the CV (`2_cv/`) is formal and stays formal. Publication titles there
 - Styles are the `.skilltree*` block at the end of `theme.scss`: a self-contained dark panel with
   `--st-*` tokens. Area colours come from `AREA_COL` in `build_tree.R` via `tree.json`; do not
   hardcode them in the qmd or SCSS.
+- **The CV's publication list is generated** (2026-09-09): `2_cv/_publications.qmd` is written by
+  `5_skilltree/R/render_cv_pubs.R` from the same YAML and included by the CV. Never edit the
+  publication block in `tanksley_cv.qmd` or the include by hand. Strings print verbatim from the
+  YAML (`authors_cv` is the exact author line the CV shows), so fix wording in the YAML.
+- **Adding a paper:** `Rscript 5_skilltree/R/add_article.R <DOI>` (CrossRef → new YAML entry; expect
+  to fix Title Case and add Peter's middle initial), rate it in the Shiny app, then
+  `build_tree.R` and `render_cv_pubs.R`, then commit YAML + `tree.json` + `_publications.qmd`. The
+  home/research `.worklist` blocks are still hand-written.
+- Preprints carry no blurb (Peter, 2026-09-09): the panel shows none, the app does not require one.
 
 ## Build gotchas
 
 - CV publication entries must be fenced divs (`::: {.pub-item}`), never raw single-line
-  `<div>`; pandoc leaves those open and truncates the TOC.
+  `<div>`; pandoc leaves those open and truncates the TOC. (Generated now; the generator emits them.)
 - Raw HTML blocks go in ```` ```{=html} ```` fences or Quarto wraps each line in `<p>`.
 - `row` as a class name collides with Bootstrap's grid.
 - Headless Chrome screenshots at narrow widths overflow body text on every page; viewport
   quirk, not a layout bug.
 - CI (`.github/workflows/publish.yml`) renders on push to `main`, including the pagedjs CV
-  PDF, using the runner's preinstalled Chrome.
+  PDF, using the runner's preinstalled Chrome. Locally, `quarto render 2_cv/tanksley_cv.qmd` builds
+  only the HTML; add `--to pdf` to rebuild the PDF.
+- The pagedjs PDF is a standalone HTML render **without the site theme**, and Quarto's
+  `when-format="html"` conditional is TRUE for it (pandoc's target is html). Anything screen-only in
+  the CV must be hidden with a rule scoped to `.pagedjs_page` in `tanksley_cv.css`, as the hex band
+  now is (it printed as seven broken-image alt texts on the PDF's last page from 2026-09-02 to 09-09).
 - A `position: fixed` overlay written inside page content can never rise above the fixed-top navbar
   (z 1030): Quarto's content column is its own stacking context (`z-index: 998; opacity: .999`), so
   z-index inside it is capped. Portal the element to `<body>` from JS instead (the skill tree does

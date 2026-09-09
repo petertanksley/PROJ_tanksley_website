@@ -1,13 +1,14 @@
 # data/articles.yml — source of truth for the skill tree.
-# Bibliographic fields are extracted from the website CV by R/extract_cv.R and are OVERWRITTEN on
-# every rerun. Judgement fields are Peter's and are preserved:
+# Bibliographic fields (incl. authors_cv, the verbatim author string the CV prints) were extracted by
+# 5_skilltree/R/extract_cv.R and are OVERWRITTEN on rerun; render_cv_pubs.R prints them back into the
+# CV. Judgement fields are Peter's and are preserved:
 #   areas.biosocial / .criminology / .responders (0-3 each; they set the article's direction from the
 #   origin, so 3/0/0 sits on its axis and 2/2/0 between two axes; the year sets the ring),
 #   role (lead | co-lead | contributing), builds_on (ids of lineage nodes), tier (unused for now),
 #   featured (false = muted tier),
 #   contribution.* (collapsed CRediT, 0-3 each), effort (1-5), effort_note, blurb, sticker.
 # First-run areas and role values are GUESSES from titles and author position — review them.
-# Last extracted 2026-09-09 12:20 from tanksley_cv.qmd
+# Last extracted 2026-09-09 13:38 from tanksley_cv.qmd
 
 - id: tanksley_2026_correctional
   title: 'Correctional officer mortality in the United States, 2020–2023: Evidence
@@ -22,6 +23,8 @@
     - Peter T. Tanksley
     - Matthew W. Logan
     - J.C. Barnes
+  authors_cv: '**Tanksley, Peter T.**, Matthew W. Logan, & J.C. Barnes.'
+  et_al: false
   authors_n: 3
   author_position: 1
   status: in_press
@@ -62,6 +65,9 @@
     - Wonuola A. Akingbuwa
     - Kerli Ilves
     - Peter T. Tanksley
+  authors_cv: Schwaba, Ted, Margaret L. Clapp Sullivan, Wonuola A. Akingbuwa, Kerli
+    Ilves, **Peter T. Tanksley**, et al.
+  et_al: true
   authors_n: ~
   author_position: 5
   status: published
@@ -103,6 +109,9 @@
     - Milena Samora
     - Steven E. Martin
     - Drew E. Gonzalez
+  authors_cv: McAllister, Matthew J., **Peter T. Tanksley**, M. Hunter Martaindale,
+    Ashlyn DeArman, Milena Samora, Steven E. Martin, & Drew E. Gonzalez.
+  et_al: false
   authors_n: 7
   author_position: 2
   status: published
@@ -142,6 +151,9 @@
     - M. Hunter Martaindale
     - Jack Johncox
     - J. Pete Blair
+  authors_cv: Eleuterio-da-Rocha, Joe, **Peter T. Tanksley**, M. Hunter Martaindale,
+    Jack Johncox, & J. Pete Blair.
+  et_al: false
   authors_n: 5
   author_position: 2
   status: published
@@ -180,6 +192,8 @@
     - John Wooldredge
     - Joshua C. Cochran
     - Peter T. Tanksley
+  authors_cv: Wooldredge, John, Joshua C. Cochran, & **Peter T. Tanksley**.
+  et_al: false
   authors_n: 3
   author_position: 3
   status: published
@@ -220,6 +234,8 @@
     - J.C. Barnes
     - J. Pete Blair
     - M. Hunter Martaindale
+  authors_cv: '**Tanksley, Peter T.**, J.C. Barnes, J. Pete Blair, & M. Hunter Martaindale.'
+  et_al: false
   authors_n: 4
   author_position: 1
   status: published
@@ -228,7 +244,8 @@
     biosocial: 0
     criminology: 0
     responders: 3
-  builds_on: tanksley_2025_mortality
+  builds_on:
+    - tanksley_2025_mortality
   tier: ~
   featured: true
   contribution:
@@ -259,6 +276,8 @@
   authors:
     - M. Hunter Martaindale
     - Peter T. Tanksley
+  authors_cv: Martaindale, M. Hunter & **Peter T. Tanksley**.
+  et_al: false
   authors_n: 2
   author_position: 2
   status: published
@@ -299,6 +318,8 @@
     - J.C. Barnes
     - J. Pete Blair
     - M. Hunter Martaindale
+  authors_cv: '**Tanksley, Peter T.**, J.C. Barnes, J. Pete Blair, & M. Hunter Martaindale.'
+  et_al: false
   authors_n: 4
   author_position: 1
   status: published
@@ -340,6 +361,9 @@
     - Peter T. Tanksley
     - Emily D. Spivey
     - M. Hunter Martaindale
+  authors_cv: Blair, Pete J., **Peter T. Tanksley**, Emily D. Spivey, & M. Hunter
+    Martaindale.
+  et_al: false
   authors_n: 4
   author_position: 2
   status: published
@@ -380,6 +404,9 @@
     - M. Hunter Martaindale
     - Peter T. Tanksley
     - Jack D. Johncox
+  authors_cv: Blair, Pete J., M. Hunter Martaindale, **Peter T. Tanksley**, & Jack
+    D. Johncox.
+  et_al: false
   authors_n: 4
   author_position: 3
   status: published
@@ -423,6 +450,9 @@
     - Peter T. Tanksley
     - Elliot M. Tucker‐Drob
     - K. Paige Harden
+  authors_cv: deSteiguer, Abby J., Laurel A.S. Raffington, Aditi Sabhlok, **Peter
+    T. Tanksley**, Elliot M. Tucker‐Drob, & K. Paige Harden.
+  et_al: false
   authors_n: 6
   author_position: 4
   status: published
@@ -465,6 +495,9 @@
     - M. Hunter Martaindale
     - Steven E. Martin
     - Matthew J. McAllister
+  authors_cv: Gonzalez, Drew E., Macilynn E. Coles, **Peter T. Tanksley**, M. Hunter
+    Martaindale, Steven E. Martin, & Matthew J. McAllister.
+  et_al: false
   authors_n: 6
   author_position: 3
   status: published
@@ -505,6 +538,9 @@
     - M. Hunter Martaindale
     - Steven E. Martin
     - Drew E. Gonzalez
+  authors_cv: McAllister, Matthew J., Caitlin Dodge, **Peter T. Tanksley**, M. Hunter
+    Martaindale, Steven E. Martin, & Drew E. Gonzalez.
+  et_al: false
   authors_n: 6
   author_position: 3
   status: published
@@ -513,7 +549,8 @@
     biosocial: 1
     criminology: 0
     responders: 3
-  builds_on: gonzalez_2025_relationships
+  builds_on:
+    - gonzalez_2025_relationships
   tier: ~
   featured: false
   contribution:
@@ -555,6 +592,11 @@
     - Terrie E. Moffitt
     - Avshalom Caspi
     - K. Paige Harden
+  authors_cv: '**Tanksley, Peter T.**, Sarah J. Brislin, Jasmin Wertz, Ronald de Vlaming,
+    Natasia S. Courchesne-Krak, Travis T. Mallard, Laurel A. S. Raffington, Richard
+    Karlsson Linner, Philipp Koellinger, Abraham A. Palmer, Sandra Sanchez-Roige,
+    Irwin Waldman, Danielle Dick, Terrie E. Moffitt, Avshalom Caspi, & K. Paige Harden.'
+  et_al: false
   authors_n: 16
   author_position: 1
   status: published
@@ -597,6 +639,9 @@
     - Shahin Tasharrofi
     - Richie Poulton
     - Avshalom Caspi
+  authors_cv: Barnes, J.C., Terrie E. Moffitt, **Peter T. Tanksley**, Shahin Tasharrofi,
+    Richie Poulton, & Avshalom Caspi.
+  et_al: false
   authors_n: 6
   author_position: 3
   status: published
@@ -644,6 +689,10 @@
     - Elliot M. Tucker-Drob
     - K. Paige Harden
     - Laurel A.S. Raffington
+  authors_cv: Willems, Yayouk E., Abby deSteiguer, **Peter T. Tanksley**, Liza Vinnik,
+    Deniz Främke, Aysu Okbay, David Richter, Gert G. Wagner, Ralph Hertwig, Philipp
+    D. Koellinger, Elliot M. Tucker-Drob, K. Paige Harden, & Laurel A.S. Raffington.
+  et_al: false
   authors_n: 13
   author_position: 3
   status: published
@@ -682,6 +731,8 @@
     - Peter T. Tanksley
     - Matthew W. Logan
     - J.C. Barnes
+  authors_cv: '**Tanksley, Peter T.**, Matthew W. Logan, & J.C. Barnes.'
+  et_al: false
   authors_n: 3
   author_position: 1
   status: published
@@ -732,6 +783,11 @@
     - Abraham A Palmer
     - Danielle M. Dick
     - Richard Karlsson Linnér
+  authors_cv: Williams, Camille M., Holly Poore, **Peter T. Tanksley**, Hyeokmoon
+    Kweon, Natasia S. Courchesne-Krak, Diego Londono-Correa, Travis T. Mallard, Peter
+    Barr, Philipp D. Koellinger, Irwin D. Waldman, Sandra Sanchez-Roige, K. Paige
+    Harden, Abraham A Palmer, Danielle M. Dick, & Richard Karlsson Linnér.
+  et_al: false
   authors_n: 15
   author_position: 3
   status: published
@@ -778,6 +834,10 @@
     - Ziada Ayorech
     - Elliot M. Tucker-Drob
     - K. Paige Harden
+  authors_cv: Raffington, Laurel A.S., **Peter T. Tanksley**, Liza Vinnik, Aditi Sabhlok,
+    Megan Patterson, Travis T. Mallard, Margherita Malanchini, Ziada Ayorech, Elliot
+    M. Tucker-Drob, & K. Paige Harden.
+  et_al: false
   authors_n: 10
   author_position: 2
   status: published
@@ -786,7 +846,8 @@
     biosocial: 3
     criminology: 0
     responders: 0
-  builds_on: raffington_2022_socially
+  builds_on:
+    - raffington_2022_socially
   tier: ~
   featured: true
   contribution:
@@ -832,6 +893,11 @@
     - Peter T. Tanksley
     - Benjamin S. Williams
     - Avshalom Caspi
+  authors_cv: Wertz, Jasmin, Terrie E. Moffitt, Louise Arseneault, J.C. Barnes, Michel
+    Boivin, David L. Corcoran, Andrea Danese, Robert J. Hancox, HonaLee Harrington,
+    Renate M. Houts, Stephanie Langevin, Hexuan Liu, Richie Poulton, Karen Sugden,
+    **Peter T. Tanksley**, Benjamin S. Williams, & Avshalom Caspi.
+  et_al: false
   authors_n: 17
   author_position: 15
   status: published
@@ -880,6 +946,10 @@
     - Peter R. Thorne
     - Graham Wilson
     - Terrie E. Moffitt
+  authors_cv: Langevin, Stephanie, Avshalom Caspi, J.C. Barnes, Grace Brennan, Richie
+    Poulton, Suzanne C. Purdy, Sandhya Ramrakha, **Peter T. Tanksley**, Peter R. Thorne,
+    Graham Wilson, & Terrie E. Moffitt.
+  et_al: false
   authors_n: 11
   author_position: 8
   status: published
@@ -925,6 +995,10 @@
     - Bridget Goosby
     - K. Paige Harden
     - Elliot M. Tucker-Drob
+  authors_cv: Raffington, Laurel A.S., **Peter T. Tanksley**, Aditi Sabhlok, Liza
+    Vinnik, Travis T. Mallard, Lucy King, Bridget Goosby, K. Paige Harden, & Elliot
+    M. Tucker-Drob.
+  et_al: false
   authors_n: 9
   author_position: 2
   status: published
@@ -967,6 +1041,9 @@
     - Ryan T. Motz
     - Rachel M. Kail
     - J.C. Barnes
+  authors_cv: Liu, Hexuan, **Peter T. Tanksley**, Ryan T. Motz, Rachel M. Kail, &
+    J.C. Barnes.
+  et_al: false
   authors_n: 5
   author_position: 2
   status: published
@@ -1007,6 +1084,9 @@
     - Peter T. Tanksley
     - J.C. Barnes
     - Kathleen Mullan Harris
+  authors_cv: Liu, Hexuan, Ryan T. Motz, **Peter T. Tanksley**, J.C. Barnes, & Kathleen
+    Mullan Harris.
+  et_al: false
   authors_n: 5
   author_position: 3
   status: published
@@ -1046,6 +1126,9 @@
     - Brian Boutwell
     - Avshalom Caspi
     - Terrie E. Moffitt
+  authors_cv: '**Tanksley, Peter T.**, J.C. Barnes, Brian Boutwell, Avshalom Caspi,
+    & Terrie E. Moffitt.'
+  et_al: false
   authors_n: 5
   author_position: 1
   status: published
@@ -1095,6 +1178,10 @@
     - Terrie E. Moffitt
     - Travis C. Pratt
     - Jasmin Wertz
+  authors_cv: Barnes, J.C., Hexuan Liu, Ryan T. Motz, **Peter T. Tanksley**, Rachel
+    M. Kail, Amber L. Beckley, Daniel W. Belsky, Benjamin W. Domingue, Terrie E. Moffitt,
+    Travis C. Pratt, & Jasmin Wertz.
+  et_al: false
   authors_n: 11
   author_position: 4
   status: published
@@ -1137,6 +1224,9 @@
     - Rachel M. Kail
     - J.C. Barnes
     - Hexuan Liu
+  authors_cv: '**Tanksley, Peter T.**, Ryan T. Motz, Rachel M. Kail, J.C. Barnes,
+    & Hexuan Liu.'
+  et_al: false
   authors_n: 5
   author_position: 1
   status: published
@@ -1178,6 +1268,9 @@
     - Hexuan Liu
     - Tesfaye B. Mersha
     - J.C. Barnes
+  authors_cv: Motz, Ryan M., **Peter T. Tanksley**, Hexuan Liu, Tesfaye B. Mersha,
+    & J.C. Barnes.
+  et_al: false
   authors_n: 5
   author_position: 2
   status: published
@@ -1222,6 +1315,9 @@
     - Alicia M. Schowe
     - Abby J. deSteiguer
     - Peter T. Tanksley
+  authors_cv: Deniz Fraemke, Lena Paulus, Isabel K. Schuurmans, J.-H. Walter, Darina
+    Czamara, Alicia M. Schowe, Abby J. deSteiguer, **Peter T. Tanksley**, et al.
+  et_al: true
   authors_n: ~
   author_position: 8
   status: preprint
@@ -1242,7 +1338,7 @@
     supervision: 0
   effort: 1
   effort_note: ~
-  blurb: Preprint
+  blurb: ~
   sticker: ~
 - id: williams_2026_genomic
   title: Genomic insights into substance use and disinhibitory disorders
@@ -1262,6 +1358,10 @@
     - Justin D. Tubbs
     - Matthew Rosenblatt
     - Peter T. Tanksley
+  authors_cv: Williams, Camille M., Holly E. Poore, Diego Londono-Correa, Yuchen Ning,
+    Natasia S. Courchesne-Krak, Maia Choi, Justin D. Tubbs, Matthew Rosenblatt, **Peter
+    T. Tanksley**, et al.
+  et_al: true
   authors_n: ~
   author_position: 9
   status: preprint
@@ -1282,6 +1382,6 @@
     supervision: 2
   effort: 4
   effort_note: ~
-  blurb: Preprint
+  blurb: ~
   sticker: ~
 
